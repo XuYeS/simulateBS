@@ -21,6 +21,7 @@
 		B77507ED1D200808009BA9F2 /* XYSFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B77507D71D200808009BA9F2 /* XYSFriendTrendsViewController.m */; settings = {ASSET_TAGS = (); }; };
 		B77507EE1D200808009BA9F2 /* XYSMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B77507DD1D200808009BA9F2 /* XYSMeViewController.m */; settings = {ASSET_TAGS = (); }; };
 		B77507EF1D200808009BA9F2 /* XYSNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B77507E31D200808009BA9F2 /* XYSNewViewController.m */; settings = {ASSET_TAGS = (); }; };
+		B77507F51D200F77009BA9F2 /* UIBarButtonItem+XYSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B77507F41D200F77009BA9F2 /* UIBarButtonItem+XYSExtension.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,8 @@
 		B77507DD1D200808009BA9F2 /* XYSMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSMeViewController.m; sourceTree = "<group>"; };
 		B77507E21D200808009BA9F2 /* XYSNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSNewViewController.h; sourceTree = "<group>"; };
 		B77507E31D200808009BA9F2 /* XYSNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSNewViewController.m; sourceTree = "<group>"; };
+		B77507F31D200F77009BA9F2 /* UIBarButtonItem+XYSExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+XYSExtension.h"; sourceTree = "<group>"; };
+		B77507F41D200F77009BA9F2 /* UIBarButtonItem+XYSExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+XYSExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,9 +164,9 @@
 				B77507BB1D200808009BA9F2 /* Main */,
 				B77507C91D200808009BA9F2 /* Other */,
 				B77507CE1D200808009BA9F2 /* XYSEssence */,
+				B77507E01D200808009BA9F2 /* XYSNew */,
 				B77507D41D200808009BA9F2 /* XYSFriendTrends */,
 				B77507DA1D200808009BA9F2 /* XYSMe */,
-				B77507E01D200808009BA9F2 /* XYSNew */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -183,6 +186,8 @@
 		B77507BC1D200808009BA9F2 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				B77507F31D200F77009BA9F2 /* UIBarButtonItem+XYSExtension.h */,
+				B77507F41D200F77009BA9F2 /* UIBarButtonItem+XYSExtension.m */,
 				B77507BD1D200808009BA9F2 /* UIView+XYSExtension.h */,
 				B77507BE1D200808009BA9F2 /* UIView+XYSExtension.m */,
 			);
@@ -502,6 +507,7 @@
 				B77507E71D200808009BA9F2 /* XYSNavigationController.m in Sources */,
 				B77507EB1D200808009BA9F2 /* main.m in Sources */,
 				B77507EC1D200808009BA9F2 /* XYSEssenceViewController.m in Sources */,
+				B77507F51D200F77009BA9F2 /* UIBarButtonItem+XYSExtension.m in Sources */,
 				B77507EF1D200808009BA9F2 /* XYSNewViewController.m in Sources */,
 				B77507E61D200808009BA9F2 /* UIView+XYSExtension.m in Sources */,
 				B77507ED1D200808009BA9F2 /* XYSFriendTrendsViewController.m in Sources */,
@@ -638,6 +644,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = imitationOfBSBDJ/Classes/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = imitationOfBSBDJ/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = S.imitationOfBSBDJ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -651,6 +658,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = imitationOfBSBDJ/Classes/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = imitationOfBSBDJ/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = S.imitationOfBSBDJ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -724,6 +732,7 @@
 				B77507B31D2007D6009BA9F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B77507B41D2007D6009BA9F2 /* Build configuration list for PBXNativeTarget "imitationOfBSBDJTests" */ = {
 			isa = XCConfigurationList;
@@ -732,6 +741,7 @@
 				B77507B61D2007D6009BA9F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B77507B71D2007D6009BA9F2 /* Build configuration list for PBXNativeTarget "imitationOfBSBDJUITests" */ = {
 			isa = XCConfigurationList;
@@ -740,6 +750,7 @@
 				B77507B91D2007D6009BA9F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

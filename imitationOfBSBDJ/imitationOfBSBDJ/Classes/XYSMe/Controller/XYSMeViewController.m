@@ -17,8 +17,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = XYSBackGroundColor ;
+    self.navigationItem.title = @"我的";
+    UIBarButtonItem *settingItem = [UIBarButtonItem itemWithImage:@"mine-setting-icon" selectedImage:@"mine-setting-icon-click" target:self action:@selector(enterSetting)];
+    UIBarButtonItem *moonItem = [UIBarButtonItem itemWithImage:@"mine-moon-icon" selectedImage:@"mine-moon-icon-click" target:self action:@selector(moonMode)];
+    self.navigationItem.rightBarButtonItems = @[settingItem,moonItem];
 }
-
+-(void)enterSetting
+{
+    XYSLogFuc;
+}
+-(void)moonMode
+{
+    XYSLogFuc;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
