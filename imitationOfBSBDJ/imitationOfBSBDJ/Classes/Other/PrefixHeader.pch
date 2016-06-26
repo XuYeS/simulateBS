@@ -1,0 +1,21 @@
+//
+//  PrefixHeader.pch
+//  simulateBS
+//
+//  Created by 徐烨晟 on 16/6/26.
+//  Copyright © 2016年 徐烨晟. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import "UIView+XYSExtension.h"
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#ifdef DEBUG
+#define XYSLog(...) NSLog(__VA_ARGS__)
+#define XYSLogFuc   NSLog(@"%s",__func__)
+#else
+#define XYSLog(...)
+#endif
+
+#endif /* PrefixHeader_pch */
