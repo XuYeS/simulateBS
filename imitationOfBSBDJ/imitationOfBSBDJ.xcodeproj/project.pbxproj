@@ -22,6 +22,7 @@
 		B77507EE1D200808009BA9F2 /* XYSMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B77507DD1D200808009BA9F2 /* XYSMeViewController.m */; settings = {ASSET_TAGS = (); }; };
 		B77507EF1D200808009BA9F2 /* XYSNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B77507E31D200808009BA9F2 /* XYSNewViewController.m */; settings = {ASSET_TAGS = (); }; };
 		B77507F51D200F77009BA9F2 /* UIBarButtonItem+XYSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B77507F41D200F77009BA9F2 /* UIBarButtonItem+XYSExtension.m */; settings = {ASSET_TAGS = (); }; };
+		D7B58BEBCCBCF23C3768049D /* libPods-imitationOfBSBDJ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DD1CA3322CF269599AEF96 /* libPods-imitationOfBSBDJ.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23A72F850AFC638673D53EDE /* Pods-imitationOfBSBDJ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imitationOfBSBDJ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-imitationOfBSBDJ/Pods-imitationOfBSBDJ.debug.xcconfig"; sourceTree = "<group>"; };
+		248D8E9C2998483438C31AF6 /* Pods-imitationOfBSBDJ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imitationOfBSBDJ.release.xcconfig"; path = "Pods/Target Support Files/Pods-imitationOfBSBDJ/Pods-imitationOfBSBDJ.release.xcconfig"; sourceTree = "<group>"; };
+		91DD1CA3322CF269599AEF96 /* libPods-imitationOfBSBDJ.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-imitationOfBSBDJ.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77507841D2007D6009BA9F2 /* imitationOfBSBDJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imitationOfBSBDJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77507911D2007D6009BA9F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B77507931D2007D6009BA9F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -81,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7B58BEBCCBCF23C3768049D /* libPods-imitationOfBSBDJ.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +106,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A9B8BBFCF545A7876140802 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23A72F850AFC638673D53EDE /* Pods-imitationOfBSBDJ.debug.xcconfig */,
+				248D8E9C2998483438C31AF6 /* Pods-imitationOfBSBDJ.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		507D62FBDD0146E505BCCC0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91DD1CA3322CF269599AEF96 /* libPods-imitationOfBSBDJ.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B775077B1D2007D6009BA9F2 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +130,8 @@
 				B77507A01D2007D6009BA9F2 /* imitationOfBSBDJTests */,
 				B77507AB1D2007D6009BA9F2 /* imitationOfBSBDJUITests */,
 				B77507851D2007D6009BA9F2 /* Products */,
+				3A9B8BBFCF545A7876140802 /* Pods */,
+				507D62FBDD0146E505BCCC0B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -378,9 +402,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B77507B11D2007D6009BA9F2 /* Build configuration list for PBXNativeTarget "imitationOfBSBDJ" */;
 			buildPhases = (
+				4435DF13FEABF2A2F93DFEBC /* 📦 Check Pods Manifest.lock */,
 				B77507801D2007D6009BA9F2 /* Sources */,
 				B77507811D2007D6009BA9F2 /* Frameworks */,
 				B77507821D2007D6009BA9F2 /* Resources */,
+				BDDCA2451E9183056F3EB498 /* 📦 Embed Pods Frameworks */,
+				A0D8AED229DF2460CB5C9744 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -494,6 +521,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4435DF13FEABF2A2F93DFEBC /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A0D8AED229DF2460CB5C9744 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-imitationOfBSBDJ/Pods-imitationOfBSBDJ-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDDCA2451E9183056F3EB498 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-imitationOfBSBDJ/Pods-imitationOfBSBDJ-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B77507801D2007D6009BA9F2 /* Sources */ = {
@@ -639,6 +714,7 @@
 		};
 		B77507B21D2007D6009BA9F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23A72F850AFC638673D53EDE /* Pods-imitationOfBSBDJ.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -653,6 +729,7 @@
 		};
 		B77507B31D2007D6009BA9F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 248D8E9C2998483438C31AF6 /* Pods-imitationOfBSBDJ.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
