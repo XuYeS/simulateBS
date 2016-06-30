@@ -1,0 +1,13 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, "8.3"
+
+target 'imitationOfBSBDJ' do
+
+    pod "SDWebImage"
+    pod "AFNetworking"
+    pod "SVProgressHUD"
+    pod "MJExtension"
+
+end
+
+
