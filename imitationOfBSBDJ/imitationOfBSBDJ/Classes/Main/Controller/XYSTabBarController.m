@@ -14,10 +14,11 @@
 #import "XYSFriendTrendsViewController.h"
 #import "XYSMeViewController.h"
 @implementation XYSTabBarController
+
 +(void)initialize
 {
     
-    UITabBarItem *itemAppearance = [UITabBarItem appearance];
+    UITabBarItem *itemAppearance = [UITabBarItem appearanceWhenContainedIn:[self class], nil];
     NSMutableDictionary *attributes = [NSMutableDictionary dictionary];
     attributes[NSForegroundColorAttributeName] = [UIColor darkGrayColor];
     [itemAppearance setTitleTextAttributes:attributes forState:UIControlStateSelected];

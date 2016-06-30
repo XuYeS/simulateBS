@@ -22,6 +22,11 @@
 		B77507EE1D200808009BA9F2 /* XYSMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B77507DD1D200808009BA9F2 /* XYSMeViewController.m */; settings = {ASSET_TAGS = (); }; };
 		B77507EF1D200808009BA9F2 /* XYSNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B77507E31D200808009BA9F2 /* XYSNewViewController.m */; settings = {ASSET_TAGS = (); }; };
 		B77507F51D200F77009BA9F2 /* UIBarButtonItem+XYSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B77507F41D200F77009BA9F2 /* UIBarButtonItem+XYSExtension.m */; settings = {ASSET_TAGS = (); }; };
+		B7DEB9FC1D250DEB007B58B3 /* XYSRecommendController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEB9FB1D250DEB007B58B3 /* XYSRecommendController.m */; settings = {ASSET_TAGS = (); }; };
+		B7DEB9FE1D250E08007B58B3 /* XYSRecommendController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7DEB9FD1D250E07007B58B3 /* XYSRecommendController.xib */; settings = {ASSET_TAGS = (); }; };
+		B7DEBA071D251E5A007B58B3 /* XYSLeftRecommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEBA051D251E5A007B58B3 /* XYSLeftRecommendCell.m */; settings = {ASSET_TAGS = (); }; };
+		B7DEBA081D251E5A007B58B3 /* XYSLeftRecommendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7DEBA061D251E5A007B58B3 /* XYSLeftRecommendCell.xib */; settings = {ASSET_TAGS = (); }; };
+		B7DEBA0B1D25354E007B58B3 /* XYSLeftRecommendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEBA0A1D25354E007B58B3 /* XYSLeftRecommendModel.m */; settings = {ASSET_TAGS = (); }; };
 		D7B58BEBCCBCF23C3768049D /* libPods-imitationOfBSBDJ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DD1CA3322CF269599AEF96 /* libPods-imitationOfBSBDJ.a */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +83,14 @@
 		B77507E31D200808009BA9F2 /* XYSNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSNewViewController.m; sourceTree = "<group>"; };
 		B77507F31D200F77009BA9F2 /* UIBarButtonItem+XYSExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+XYSExtension.h"; sourceTree = "<group>"; };
 		B77507F41D200F77009BA9F2 /* UIBarButtonItem+XYSExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+XYSExtension.m"; sourceTree = "<group>"; };
+		B7DEB9FA1D250DEB007B58B3 /* XYSRecommendController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSRecommendController.h; sourceTree = "<group>"; };
+		B7DEB9FB1D250DEB007B58B3 /* XYSRecommendController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSRecommendController.m; sourceTree = "<group>"; };
+		B7DEB9FD1D250E07007B58B3 /* XYSRecommendController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYSRecommendController.xib; sourceTree = "<group>"; };
+		B7DEBA041D251E5A007B58B3 /* XYSLeftRecommendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSLeftRecommendCell.h; sourceTree = "<group>"; };
+		B7DEBA051D251E5A007B58B3 /* XYSLeftRecommendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSLeftRecommendCell.m; sourceTree = "<group>"; };
+		B7DEBA061D251E5A007B58B3 /* XYSLeftRecommendCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYSLeftRecommendCell.xib; sourceTree = "<group>"; };
+		B7DEBA091D25354E007B58B3 /* XYSLeftRecommendModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSLeftRecommendModel.h; sourceTree = "<group>"; };
+		B7DEBA0A1D25354E007B58B3 /* XYSLeftRecommendModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSLeftRecommendModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -311,6 +324,9 @@
 			children = (
 				B77507D61D200808009BA9F2 /* XYSFriendTrendsViewController.h */,
 				B77507D71D200808009BA9F2 /* XYSFriendTrendsViewController.m */,
+				B7DEB9FA1D250DEB007B58B3 /* XYSRecommendController.h */,
+				B7DEB9FB1D250DEB007B58B3 /* XYSRecommendController.m */,
+				B7DEB9FD1D250E07007B58B3 /* XYSRecommendController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -318,6 +334,8 @@
 		B77507D81D200808009BA9F2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B7DEBA091D25354E007B58B3 /* XYSLeftRecommendModel.h */,
+				B7DEBA0A1D25354E007B58B3 /* XYSLeftRecommendModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -325,6 +343,9 @@
 		B77507D91D200808009BA9F2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B7DEBA041D251E5A007B58B3 /* XYSLeftRecommendCell.h */,
+				B7DEBA051D251E5A007B58B3 /* XYSLeftRecommendCell.m */,
+				B7DEBA061D251E5A007B58B3 /* XYSLeftRecommendCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -460,6 +481,7 @@
 		B775077C1D2007D6009BA9F2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = XYS;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "徐烨晟";
 				TargetAttributes = {
@@ -503,6 +525,8 @@
 			files = (
 				B77507941D2007D6009BA9F2 /* Assets.xcassets in Resources */,
 				B77507921D2007D6009BA9F2 /* Main.storyboard in Resources */,
+				B7DEBA081D251E5A007B58B3 /* XYSLeftRecommendCell.xib in Resources */,
+				B7DEB9FE1D250E08007B58B3 /* XYSRecommendController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,11 +599,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7DEBA0B1D25354E007B58B3 /* XYSLeftRecommendModel.m in Sources */,
 				B77507E81D200808009BA9F2 /* XYSTabBarController.m in Sources */,
 				B77507E91D200808009BA9F2 /* XYSTabBar.m in Sources */,
+				B7DEBA071D251E5A007B58B3 /* XYSLeftRecommendCell.m in Sources */,
 				B77507EA1D200808009BA9F2 /* AppDelegate.m in Sources */,
 				B77507EE1D200808009BA9F2 /* XYSMeViewController.m in Sources */,
 				B77507E71D200808009BA9F2 /* XYSNavigationController.m in Sources */,
+				B7DEB9FC1D250DEB007B58B3 /* XYSRecommendController.m in Sources */,
 				B77507EB1D200808009BA9F2 /* main.m in Sources */,
 				B77507EC1D200808009BA9F2 /* XYSEssenceViewController.m in Sources */,
 				B77507F51D200F77009BA9F2 /* UIBarButtonItem+XYSExtension.m in Sources */,
