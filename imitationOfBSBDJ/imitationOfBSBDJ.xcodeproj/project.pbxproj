@@ -27,6 +27,9 @@
 		B7DEBA071D251E5A007B58B3 /* XYSLeftRecommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEBA051D251E5A007B58B3 /* XYSLeftRecommendCell.m */; settings = {ASSET_TAGS = (); }; };
 		B7DEBA081D251E5A007B58B3 /* XYSLeftRecommendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7DEBA061D251E5A007B58B3 /* XYSLeftRecommendCell.xib */; settings = {ASSET_TAGS = (); }; };
 		B7DEBA0B1D25354E007B58B3 /* XYSLeftRecommendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEBA0A1D25354E007B58B3 /* XYSLeftRecommendModel.m */; settings = {ASSET_TAGS = (); }; };
+		B7DEBA0F1D2567FF007B58B3 /* XYSRightRecommendUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEBA0D1D2567FF007B58B3 /* XYSRightRecommendUserCell.m */; settings = {ASSET_TAGS = (); }; };
+		B7DEBA101D2567FF007B58B3 /* XYSRightRecommendUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7DEBA0E1D2567FF007B58B3 /* XYSRightRecommendUserCell.xib */; settings = {ASSET_TAGS = (); }; };
+		B7DEBA131D256ADC007B58B3 /* XYSRightRecommendUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEBA121D256ADC007B58B3 /* XYSRightRecommendUserModel.m */; settings = {ASSET_TAGS = (); }; };
 		D7B58BEBCCBCF23C3768049D /* libPods-imitationOfBSBDJ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DD1CA3322CF269599AEF96 /* libPods-imitationOfBSBDJ.a */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +94,11 @@
 		B7DEBA061D251E5A007B58B3 /* XYSLeftRecommendCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYSLeftRecommendCell.xib; sourceTree = "<group>"; };
 		B7DEBA091D25354E007B58B3 /* XYSLeftRecommendModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSLeftRecommendModel.h; sourceTree = "<group>"; };
 		B7DEBA0A1D25354E007B58B3 /* XYSLeftRecommendModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSLeftRecommendModel.m; sourceTree = "<group>"; };
+		B7DEBA0C1D2567FF007B58B3 /* XYSRightRecommendUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSRightRecommendUserCell.h; sourceTree = "<group>"; };
+		B7DEBA0D1D2567FF007B58B3 /* XYSRightRecommendUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSRightRecommendUserCell.m; sourceTree = "<group>"; };
+		B7DEBA0E1D2567FF007B58B3 /* XYSRightRecommendUserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYSRightRecommendUserCell.xib; sourceTree = "<group>"; };
+		B7DEBA111D256ADC007B58B3 /* XYSRightRecommendUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSRightRecommendUserModel.h; sourceTree = "<group>"; };
+		B7DEBA121D256ADC007B58B3 /* XYSRightRecommendUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSRightRecommendUserModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -336,6 +344,8 @@
 			children = (
 				B7DEBA091D25354E007B58B3 /* XYSLeftRecommendModel.h */,
 				B7DEBA0A1D25354E007B58B3 /* XYSLeftRecommendModel.m */,
+				B7DEBA111D256ADC007B58B3 /* XYSRightRecommendUserModel.h */,
+				B7DEBA121D256ADC007B58B3 /* XYSRightRecommendUserModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -346,6 +356,9 @@
 				B7DEBA041D251E5A007B58B3 /* XYSLeftRecommendCell.h */,
 				B7DEBA051D251E5A007B58B3 /* XYSLeftRecommendCell.m */,
 				B7DEBA061D251E5A007B58B3 /* XYSLeftRecommendCell.xib */,
+				B7DEBA0C1D2567FF007B58B3 /* XYSRightRecommendUserCell.h */,
+				B7DEBA0D1D2567FF007B58B3 /* XYSRightRecommendUserCell.m */,
+				B7DEBA0E1D2567FF007B58B3 /* XYSRightRecommendUserCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -525,6 +538,7 @@
 			files = (
 				B77507941D2007D6009BA9F2 /* Assets.xcassets in Resources */,
 				B77507921D2007D6009BA9F2 /* Main.storyboard in Resources */,
+				B7DEBA101D2567FF007B58B3 /* XYSRightRecommendUserCell.xib in Resources */,
 				B7DEBA081D251E5A007B58B3 /* XYSLeftRecommendCell.xib in Resources */,
 				B7DEB9FE1D250E08007B58B3 /* XYSRecommendController.xib in Resources */,
 			);
@@ -602,6 +616,7 @@
 				B7DEBA0B1D25354E007B58B3 /* XYSLeftRecommendModel.m in Sources */,
 				B77507E81D200808009BA9F2 /* XYSTabBarController.m in Sources */,
 				B77507E91D200808009BA9F2 /* XYSTabBar.m in Sources */,
+				B7DEBA131D256ADC007B58B3 /* XYSRightRecommendUserModel.m in Sources */,
 				B7DEBA071D251E5A007B58B3 /* XYSLeftRecommendCell.m in Sources */,
 				B77507EA1D200808009BA9F2 /* AppDelegate.m in Sources */,
 				B77507EE1D200808009BA9F2 /* XYSMeViewController.m in Sources */,
@@ -609,6 +624,7 @@
 				B7DEB9FC1D250DEB007B58B3 /* XYSRecommendController.m in Sources */,
 				B77507EB1D200808009BA9F2 /* main.m in Sources */,
 				B77507EC1D200808009BA9F2 /* XYSEssenceViewController.m in Sources */,
+				B7DEBA0F1D2567FF007B58B3 /* XYSRightRecommendUserCell.m in Sources */,
 				B77507F51D200F77009BA9F2 /* UIBarButtonItem+XYSExtension.m in Sources */,
 				B77507EF1D200808009BA9F2 /* XYSNewViewController.m in Sources */,
 				B77507E61D200808009BA9F2 /* UIView+XYSExtension.m in Sources */,

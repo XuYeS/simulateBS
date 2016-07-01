@@ -16,4 +16,11 @@
              @"Count" : @"count",
              };
 }
+-(NSMutableArray *)listOfRecommendUser
+{
+    if (!_listOfRecommendUser) {
+        _listOfRecommendUser = [NSMutableArray array];
+    }
+    return _listOfRecommendUser;
+}
 @end

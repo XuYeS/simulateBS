@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XYSRecommendController">
             <connections>
                 <outlet property="leftTableView" destination="Yf8-s8-Gkl" id="Uqc-cV-yGO"/>
+                <outlet property="rightUserTableView" destination="ovX-15-dqd" id="SY9-v3-xbt"/>
                 <outlet property="view" destination="iN0-l3-epB" id="XbY-XL-Lt2"/>
             </connections>
         </placeholder>
@@ -29,11 +30,24 @@
                         <outlet property="delegate" destination="-1" id="LM4-oj-aXH"/>
                     </connections>
                 </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ovX-15-dqd">
+                    <rect key="frame" x="78" y="0.0" width="522" height="600"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="lzk-l9-c11"/>
+                        <outlet property="delegate" destination="-1" id="ihf-du-Ygr"/>
+                    </connections>
+                </tableView>
             </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="ovX-15-dqd" firstAttribute="leading" secondItem="Yf8-s8-Gkl" secondAttribute="trailing" id="7KE-h8-uus"/>
                 <constraint firstAttribute="bottom" secondItem="Yf8-s8-Gkl" secondAttribute="bottom" constant="13" id="L3H-Hs-96G"/>
+                <constraint firstAttribute="trailing" secondItem="ovX-15-dqd" secondAttribute="trailing" id="XlW-y5-nAF"/>
+                <constraint firstAttribute="bottom" secondItem="ovX-15-dqd" secondAttribute="bottom" id="Yc0-N7-uh9"/>
+                <constraint firstItem="ovX-15-dqd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Z94-cT-jxf"/>
                 <constraint firstItem="Yf8-s8-Gkl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hbj-Sn-Fcj"/>
                 <constraint firstItem="Yf8-s8-Gkl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="q8V-8C-Ene"/>
             </constraints>
