@@ -8,7 +8,9 @@
 
 #import "XYSFriendTrendsViewController.h"
 #import "XYSRecommendController.h"
+#import "XYSLoginRegisterController.h"
 @interface XYSFriendTrendsViewController ()
+
 
 @end
 
@@ -27,5 +29,20 @@
     [self.navigationController pushViewController:recommendController animated:YES];
     
 }
+- (IBAction)login:(UIButton *)sender {
+    XYSLoginRegisterController *loginRigister = [[XYSLoginRegisterController alloc]init];
+    
+    if ([sender.titleLabel.text isEqualToString:@"登陆"]) {
+        loginRigister.isLogin = YES;
+        [self.navigationController presentViewController:loginRigister animated:YES completion:nil];
+    }else{
+        loginRigister.isLogin = NO;
+        [self.navigationController presentViewController:loginRigister animated:YES completion:nil];
+
+    }
+    
+    
+}
+
 
 @end
