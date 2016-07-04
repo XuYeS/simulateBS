@@ -64,4 +64,24 @@
 {
     return self.frame.size.width;
 }
+-(void)setXys_centerX:(CGFloat)xys_centerX
+{
+    CGPoint center = self.center;
+    center.x = xys_centerX;
+    self.center = center;
+}
+-(void)setXys_centerY:(CGFloat)xys_centerY
+{
+    CGPoint center = self.center;
+    center.y = xys_centerY;
+    self.center = center;
+}
+-(CGFloat)xys_centerX
+{
+    return self.center.x;
+}
+-(CGFloat)xys_centerY
+{
+    return self.center.y;
+}
 @end

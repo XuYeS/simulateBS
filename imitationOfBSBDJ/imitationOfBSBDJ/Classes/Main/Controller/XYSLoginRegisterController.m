@@ -18,6 +18,7 @@
 
 @implementation XYSLoginRegisterController
 
+
 - (void)viewDidLoad {
     
     [super viewDidLoad];
@@ -28,7 +29,7 @@
     }
     else{
         self.registerButton.selected = YES;
-        self.leftMargin.constant -= [UIScreen mainScreen].bounds.size.width;
+        self.leftMargin.constant -= screenWidth;
     }
     
 }
@@ -50,7 +51,7 @@
     
     if (self.longinView.xys_x == 0) {
         sender.selected = YES;
-        self.leftMargin.constant -= self.longinView.xys_width;
+        self.leftMargin.constant -= screenWidth;
     }else{
         sender.selected = NO;
         self.leftMargin.constant = 0;

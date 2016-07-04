@@ -13,5 +13,7 @@
 @property (assign, nonatomic) CGFloat xys_y;
 @property (assign, nonatomic) CGFloat xys_width;
 @property (assign, nonatomic) CGFloat xys_height;
+@property (assign, nonatomic) CGFloat xys_centerX;
+@property (assign, nonatomic) CGFloat xys_centerY;
 @property (assign, nonatomic) CGSize xys_size;
 @end
