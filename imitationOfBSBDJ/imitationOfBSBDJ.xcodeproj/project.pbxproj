@@ -16,11 +16,7 @@
 		B70312691D29448300D09EE9 /* XYSVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B70312681D29448300D09EE9 /* XYSVerticalButton.m */; settings = {ASSET_TAGS = (); }; };
 		B70312701D295DA500D09EE9 /* XYSLoginRegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B703126F1D295DA500D09EE9 /* XYSLoginRegisterController.xib */; settings = {ASSET_TAGS = (); }; };
 		B70312731D2963FE00D09EE9 /* XYSTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B70312721D2963FE00D09EE9 /* XYSTextField.m */; settings = {ASSET_TAGS = (); }; };
-		B756DAAC1D2D2EEB00B9960A /* XYSAllTopicController.m in Sources */ = {isa = PBXBuildFile; fileRef = B756DAAB1D2D2EEB00B9960A /* XYSAllTopicController.m */; settings = {ASSET_TAGS = (); }; };
-		B756DAAF1D2D2F1600B9960A /* XYSPictureTopicController.m in Sources */ = {isa = PBXBuildFile; fileRef = B756DAAE1D2D2F1600B9960A /* XYSPictureTopicController.m */; settings = {ASSET_TAGS = (); }; };
-		B756DAB21D2D2F3100B9960A /* XYSVideoTopicController.m in Sources */ = {isa = PBXBuildFile; fileRef = B756DAB11D2D2F3100B9960A /* XYSVideoTopicController.m */; settings = {ASSET_TAGS = (); }; };
-		B756DAB51D2D2F4400B9960A /* XYSVoiceTopicController.m in Sources */ = {isa = PBXBuildFile; fileRef = B756DAB41D2D2F4400B9960A /* XYSVoiceTopicController.m */; settings = {ASSET_TAGS = (); }; };
-		B756DAB81D2D2F6400B9960A /* XYSJokeTopicController.m in Sources */ = {isa = PBXBuildFile; fileRef = B756DAB71D2D2F6400B9960A /* XYSJokeTopicController.m */; settings = {ASSET_TAGS = (); }; };
+		B756DAB81D2D2F6400B9960A /* XYSTopicController.m in Sources */ = {isa = PBXBuildFile; fileRef = B756DAB71D2D2F6400B9960A /* XYSTopicController.m */; settings = {ASSET_TAGS = (); }; };
 		B77507921D2007D6009BA9F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B77507901D2007D6009BA9F2 /* Main.storyboard */; };
 		B77507941D2007D6009BA9F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B77507931D2007D6009BA9F2 /* Assets.xcassets */; };
 		B77507A21D2007D6009BA9F2 /* imitationOfBSBDJTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B77507A11D2007D6009BA9F2 /* imitationOfBSBDJTests.m */; };
@@ -36,6 +32,9 @@
 		B77507EE1D200808009BA9F2 /* XYSMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B77507DD1D200808009BA9F2 /* XYSMeViewController.m */; settings = {ASSET_TAGS = (); }; };
 		B77507EF1D200808009BA9F2 /* XYSNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B77507E31D200808009BA9F2 /* XYSNewViewController.m */; settings = {ASSET_TAGS = (); }; };
 		B77507F51D200F77009BA9F2 /* UIBarButtonItem+XYSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B77507F41D200F77009BA9F2 /* UIBarButtonItem+XYSExtension.m */; settings = {ASSET_TAGS = (); }; };
+		B7BDDD391D2F85A80078714A /* XYSTopicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B7BDDD381D2F85A80078714A /* XYSTopicModel.m */; settings = {ASSET_TAGS = (); }; };
+		B7BDDD3D1D2F8BFC0078714A /* XYSTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7BDDD3B1D2F8BFC0078714A /* XYSTopicCell.m */; settings = {ASSET_TAGS = (); }; };
+		B7BDDD401D2F8D530078714A /* XYSTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7BDDD3F1D2F8D530078714A /* XYSTopicCell.xib */; settings = {ASSET_TAGS = (); }; };
 		B7DEB9FC1D250DEB007B58B3 /* XYSRecommendController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEB9FB1D250DEB007B58B3 /* XYSRecommendController.m */; settings = {ASSET_TAGS = (); }; };
 		B7DEB9FE1D250E08007B58B3 /* XYSRecommendController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7DEB9FD1D250E07007B58B3 /* XYSRecommendController.xib */; settings = {ASSET_TAGS = (); }; };
 		B7DEBA071D251E5A007B58B3 /* XYSLeftRecommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEBA051D251E5A007B58B3 /* XYSLeftRecommendCell.m */; settings = {ASSET_TAGS = (); }; };
@@ -83,16 +82,8 @@
 		B703126F1D295DA500D09EE9 /* XYSLoginRegisterController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYSLoginRegisterController.xib; sourceTree = "<group>"; };
 		B70312711D2963FE00D09EE9 /* XYSTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSTextField.h; sourceTree = "<group>"; };
 		B70312721D2963FE00D09EE9 /* XYSTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSTextField.m; sourceTree = "<group>"; };
-		B756DAAA1D2D2EEB00B9960A /* XYSAllTopicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSAllTopicController.h; sourceTree = "<group>"; };
-		B756DAAB1D2D2EEB00B9960A /* XYSAllTopicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSAllTopicController.m; sourceTree = "<group>"; };
-		B756DAAD1D2D2F1600B9960A /* XYSPictureTopicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSPictureTopicController.h; sourceTree = "<group>"; };
-		B756DAAE1D2D2F1600B9960A /* XYSPictureTopicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSPictureTopicController.m; sourceTree = "<group>"; };
-		B756DAB01D2D2F3100B9960A /* XYSVideoTopicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSVideoTopicController.h; sourceTree = "<group>"; };
-		B756DAB11D2D2F3100B9960A /* XYSVideoTopicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSVideoTopicController.m; sourceTree = "<group>"; };
-		B756DAB31D2D2F4400B9960A /* XYSVoiceTopicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSVoiceTopicController.h; sourceTree = "<group>"; };
-		B756DAB41D2D2F4400B9960A /* XYSVoiceTopicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSVoiceTopicController.m; sourceTree = "<group>"; };
-		B756DAB61D2D2F6400B9960A /* XYSJokeTopicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSJokeTopicController.h; sourceTree = "<group>"; };
-		B756DAB71D2D2F6400B9960A /* XYSJokeTopicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSJokeTopicController.m; sourceTree = "<group>"; };
+		B756DAB61D2D2F6400B9960A /* XYSTopicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSTopicController.h; sourceTree = "<group>"; };
+		B756DAB71D2D2F6400B9960A /* XYSTopicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSTopicController.m; sourceTree = "<group>"; };
 		B77507841D2007D6009BA9F2 /* imitationOfBSBDJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imitationOfBSBDJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77507911D2007D6009BA9F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B77507931D2007D6009BA9F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -125,6 +116,11 @@
 		B77507E31D200808009BA9F2 /* XYSNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSNewViewController.m; sourceTree = "<group>"; };
 		B77507F31D200F77009BA9F2 /* UIBarButtonItem+XYSExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+XYSExtension.h"; sourceTree = "<group>"; };
 		B77507F41D200F77009BA9F2 /* UIBarButtonItem+XYSExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+XYSExtension.m"; sourceTree = "<group>"; };
+		B7BDDD371D2F85A80078714A /* XYSTopicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSTopicModel.h; sourceTree = "<group>"; };
+		B7BDDD381D2F85A80078714A /* XYSTopicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSTopicModel.m; sourceTree = "<group>"; };
+		B7BDDD3A1D2F8BFC0078714A /* XYSTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSTopicCell.h; sourceTree = "<group>"; };
+		B7BDDD3B1D2F8BFC0078714A /* XYSTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSTopicCell.m; sourceTree = "<group>"; };
+		B7BDDD3F1D2F8D530078714A /* XYSTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYSTopicCell.xib; sourceTree = "<group>"; };
 		B7DEB9FA1D250DEB007B58B3 /* XYSRecommendController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSRecommendController.h; sourceTree = "<group>"; };
 		B7DEB9FB1D250DEB007B58B3 /* XYSRecommendController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSRecommendController.m; sourceTree = "<group>"; };
 		B7DEB9FD1D250E07007B58B3 /* XYSRecommendController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYSRecommendController.xib; sourceTree = "<group>"; };
@@ -347,16 +343,8 @@
 				B77507D11D200808009BA9F2 /* XYSEssenceViewController.m */,
 				B70312501D28F09F00D09EE9 /* XYSRecommendTableViewController.h */,
 				B70312511D28F09F00D09EE9 /* XYSRecommendTableViewController.m */,
-				B756DAAA1D2D2EEB00B9960A /* XYSAllTopicController.h */,
-				B756DAAB1D2D2EEB00B9960A /* XYSAllTopicController.m */,
-				B756DAAD1D2D2F1600B9960A /* XYSPictureTopicController.h */,
-				B756DAAE1D2D2F1600B9960A /* XYSPictureTopicController.m */,
-				B756DAB01D2D2F3100B9960A /* XYSVideoTopicController.h */,
-				B756DAB11D2D2F3100B9960A /* XYSVideoTopicController.m */,
-				B756DAB31D2D2F4400B9960A /* XYSVoiceTopicController.h */,
-				B756DAB41D2D2F4400B9960A /* XYSVoiceTopicController.m */,
-				B756DAB61D2D2F6400B9960A /* XYSJokeTopicController.h */,
-				B756DAB71D2D2F6400B9960A /* XYSJokeTopicController.m */,
+				B756DAB61D2D2F6400B9960A /* XYSTopicController.h */,
+				B756DAB71D2D2F6400B9960A /* XYSTopicController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -366,6 +354,8 @@
 			children = (
 				B70312581D28F4B000D09EE9 /* XYSRecommendTagModel.h */,
 				B70312591D28F4B000D09EE9 /* XYSRecommendTagModel.m */,
+				B7BDDD371D2F85A80078714A /* XYSTopicModel.h */,
+				B7BDDD381D2F85A80078714A /* XYSTopicModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -376,6 +366,9 @@
 				B70312531D28F1FE00D09EE9 /* XYSRecommendTagCell.h */,
 				B70312541D28F1FE00D09EE9 /* XYSRecommendTagCell.m */,
 				B70312551D28F1FE00D09EE9 /* XYSRecommendTagCell.xib */,
+				B7BDDD3A1D2F8BFC0078714A /* XYSTopicCell.h */,
+				B7BDDD3B1D2F8BFC0078714A /* XYSTopicCell.m */,
+				B7BDDD3F1D2F8D530078714A /* XYSTopicCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -600,6 +593,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7BDDD401D2F8D530078714A /* XYSTopicCell.xib in Resources */,
 				B77507941D2007D6009BA9F2 /* Assets.xcassets in Resources */,
 				B77507921D2007D6009BA9F2 /* Main.storyboard in Resources */,
 				B70312701D295DA500D09EE9 /* XYSLoginRegisterController.xib in Resources */,
@@ -681,19 +675,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7DEBA0B1D25354E007B58B3 /* XYSLeftRecommendModel.m in Sources */,
-				B756DAB51D2D2F4400B9960A /* XYSVoiceTopicController.m in Sources */,
 				B77507E81D200808009BA9F2 /* XYSTabBarController.m in Sources */,
 				B77507E91D200808009BA9F2 /* XYSTabBar.m in Sources */,
 				B7DEBA131D256ADC007B58B3 /* XYSRightRecommendUserModel.m in Sources */,
+				B7BDDD3D1D2F8BFC0078714A /* XYSTopicCell.m in Sources */,
 				B7DEBA071D251E5A007B58B3 /* XYSLeftRecommendCell.m in Sources */,
-				B756DAB81D2D2F6400B9960A /* XYSJokeTopicController.m in Sources */,
-				B756DAB21D2D2F3100B9960A /* XYSVideoTopicController.m in Sources */,
+				B756DAB81D2D2F6400B9960A /* XYSTopicController.m in Sources */,
 				B77507EA1D200808009BA9F2 /* AppDelegate.m in Sources */,
 				B77507EE1D200808009BA9F2 /* XYSMeViewController.m in Sources */,
 				B77507E71D200808009BA9F2 /* XYSNavigationController.m in Sources */,
-				B756DAAC1D2D2EEB00B9960A /* XYSAllTopicController.m in Sources */,
-				B756DAAF1D2D2F1600B9960A /* XYSPictureTopicController.m in Sources */,
 				B703125A1D28F4B000D09EE9 /* XYSRecommendTagModel.m in Sources */,
+				B7BDDD391D2F85A80078714A /* XYSTopicModel.m in Sources */,
 				B70312621D2906DA00D09EE9 /* XYSLoginRegisterController.m in Sources */,
 				B70312521D28F09F00D09EE9 /* XYSRecommendTableViewController.m in Sources */,
 				B7DEB9FC1D250DEB007B58B3 /* XYSRecommendController.m in Sources */,

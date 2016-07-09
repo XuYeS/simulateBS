@@ -8,11 +8,7 @@
 
 #import "XYSEssenceViewController.h"
 #import "XYSRecommendTableViewController.h"
-#import "XYSAllTopicController.h"
-#import "XYSPictureTopicController.h"
-#import "XYSVideoTopicController.h"
-#import "XYSVoiceTopicController.h"
-#import "XYSJokeTopicController.h"
+#import "XYSTopicController.h"
 
 @interface XYSEssenceViewController () <UIScrollViewDelegate>
 /** 红色的下标*/
@@ -55,24 +51,29 @@
  */
 - (void)setupChildVCs
 {
-    XYSAllTopicController *all = [[XYSAllTopicController alloc] init];
+    XYSTopicController *all = [[XYSTopicController alloc] init];
     all.title = @"全部";
+    all.type = XYSTopicTypeAll;
     [self addChildViewController:all];
     
-    XYSPictureTopicController *picture = [[XYSPictureTopicController alloc] init];
+    XYSTopicController *picture = [[XYSTopicController alloc] init];
     picture.title = @"图片";
+    picture.type = XYSTopicTypePicture;
     [self addChildViewController:picture];
     
-    XYSVideoTopicController *video = [[XYSVideoTopicController alloc] init];
+    XYSTopicController *video = [[XYSTopicController alloc] init];
     video.title = @"视频";
+    video.type = XYSTopicTypeVideo;
     [self addChildViewController:video];
     
-    XYSVoiceTopicController *voice = [[XYSVoiceTopicController alloc] init];
+    XYSTopicController *voice = [[XYSTopicController alloc] init];
     voice.title = @"声音";
+    voice.type = XYSTopicTypeVoice;
     [self addChildViewController:voice];
     
-    XYSJokeTopicController *joke = [[XYSJokeTopicController alloc] init];
+    XYSTopicController *joke = [[XYSTopicController alloc] init];
     joke.title = @"段子";
+    joke.type = XYSTopicTypeJoke;
     [self addChildViewController:joke];
 }
 /**
