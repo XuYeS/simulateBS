@@ -53,7 +53,7 @@
             <connections>
                 <outlet property="gifFlagView" destination="PaE-YL-46E" id="Knr-9y-9E6"/>
                 <outlet property="pictureView" destination="IRw-wO-0Xu" id="Kv8-J5-dHs"/>
-                <outlet property="seeBigButton" destination="f58-AK-bkU" id="5Q4-ZS-nZC"/>
+                <outlet property="seeBigButton" destination="f58-AK-bkU" id="bLK-iE-keF"/>
             </connections>
             <point key="canvasLocation" x="589" y="317"/>
         </view>
