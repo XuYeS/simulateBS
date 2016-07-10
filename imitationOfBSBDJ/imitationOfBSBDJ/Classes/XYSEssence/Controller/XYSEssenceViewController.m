@@ -51,15 +51,16 @@
  */
 - (void)setupChildVCs
 {
-    XYSTopicController *all = [[XYSTopicController alloc] init];
-    all.title = @"全部";
-    all.type = XYSTopicTypeAll;
-    [self addChildViewController:all];
     
     XYSTopicController *picture = [[XYSTopicController alloc] init];
     picture.title = @"图片";
     picture.type = XYSTopicTypePicture;
     [self addChildViewController:picture];
+    
+    XYSTopicController *all = [[XYSTopicController alloc] init];
+    all.title = @"全部";
+    all.type = XYSTopicTypeAll;
+    [self addChildViewController:all];
     
     XYSTopicController *video = [[XYSTopicController alloc] init];
     video.title = @"视频";
@@ -100,7 +101,7 @@
     CGFloat height = 40.0;
     //背景scrollView
     UIScrollView *tagView = [[UIScrollView alloc]init];
-    tagView.backgroundColor = [[UIColor whiteColor]colorWithAlphaComponent:0.5];
+    tagView.backgroundColor = [[UIColor whiteColor]colorWithAlphaComponent:0.7];
     tagView.xys_y = NavigationBarButtomY;
     tagView.xys_width = screenWidth;
     tagView.xys_height = height;

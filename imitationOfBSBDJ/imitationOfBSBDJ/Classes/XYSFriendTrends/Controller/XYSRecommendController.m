@@ -103,6 +103,7 @@ static NSString *rightCellId = @"rightRecommendUserCell";
     //添加refreshheader控件
     self.rightUserTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewUsers)];
     //添加refreshfooter控件
+    self.rightUserTableView.mj_header.automaticallyChangeAlpha = YES;
     self.rightUserTableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreUsers)];
    
 }

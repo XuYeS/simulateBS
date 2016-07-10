@@ -7,10 +7,11 @@
 //
 
 #import "XYSLeftRecommendModel.h"
+#import <MJExtension.h>
 
 @implementation XYSLeftRecommendModel
 //MJExtension 中模型中的属性名和字典中的key不相同使用该方法进行调换！
-+ (NSDictionary *)replacedKeyFromPropertyName{
++ (NSDictionary *)mj_replacedKeyFromPropertyName{
     return @{
              @"ID" : @"id",
              @"Count" : @"count",

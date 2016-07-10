@@ -23,14 +23,14 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tk6-IU-6gJ" userLabel="昵称">
-                        <rect key="frame" x="55" y="10" width="38" height="18"/>
+                        <rect key="frame" x="55" y="10" width="37.5" height="18"/>
                         <animations/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EkS-ey-sXu" userLabel="时间">
-                        <rect key="frame" x="55" y="30" width="31" height="15"/>
+                        <rect key="frame" x="55" y="30" width="31" height="14.5"/>
                         <animations/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -157,6 +157,13 @@
                             <constraint firstAttribute="trailing" secondItem="y1Y-Om-KR7" secondAttribute="trailing" id="qpX-i9-Z9I"/>
                         </constraints>
                     </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBC-Ae-IGy" userLabel=" 话题文字">
+                        <rect key="frame" x="18" y="54.5" width="284" height="17"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <animations/>
                 <constraints>
@@ -165,9 +172,12 @@
                     <constraint firstItem="YzR-bq-haB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="9nQ-LC-gLG"/>
                     <constraint firstItem="tk6-IU-6gJ" firstAttribute="leading" secondItem="YzR-bq-haB" secondAttribute="trailing" constant="10" id="ENl-Pa-R3N"/>
                     <constraint firstItem="EkS-ey-sXu" firstAttribute="leading" secondItem="tk6-IU-6gJ" secondAttribute="leading" id="Krv-ZL-65R"/>
+                    <constraint firstItem="oBC-Ae-IGy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="N15-Lf-YaM"/>
+                    <constraint firstItem="oBC-Ae-IGy" firstAttribute="top" secondItem="YzR-bq-haB" secondAttribute="bottom" constant="10" id="PCZ-tq-Qlp"/>
                     <constraint firstItem="Bzh-fm-aB8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Rs4-nP-MJM"/>
                     <constraint firstAttribute="trailing" secondItem="Bzh-fm-aB8" secondAttribute="trailing" id="Tpy-9c-7Ty"/>
                     <constraint firstAttribute="trailing" secondItem="bmm-s8-QVI" secondAttribute="trailing" constant="10" id="VWr-sg-crc"/>
+                    <constraint firstAttribute="trailing" secondItem="oBC-Ae-IGy" secondAttribute="trailing" constant="18" id="gnG-Zg-emC"/>
                     <constraint firstItem="YzR-bq-haB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="gxG-A6-xHX"/>
                     <constraint firstItem="YzR-bq-haB" firstAttribute="top" secondItem="tk6-IU-6gJ" secondAttribute="top" id="iYJ-dv-BYg"/>
                     <constraint firstAttribute="bottom" secondItem="Bzh-fm-aB8" secondAttribute="bottom" id="nwf-2j-Bhw"/>
@@ -182,6 +192,7 @@
                 <outlet property="headerImage" destination="YzR-bq-haB" id="ZME-rZ-7ux"/>
                 <outlet property="nameLabel" destination="tk6-IU-6gJ" id="K6I-Pf-BWX"/>
                 <outlet property="repostButton" destination="Lhm-Tk-Zwz" id="uEO-ce-MQt"/>
+                <outlet property="topicTextLabel" destination="oBC-Ae-IGy" id="8q1-Vb-LAB"/>
             </connections>
             <point key="canvasLocation" x="354" y="331.5"/>
         </tableViewCell>

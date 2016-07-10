@@ -17,6 +17,10 @@
 		B70312701D295DA500D09EE9 /* XYSLoginRegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B703126F1D295DA500D09EE9 /* XYSLoginRegisterController.xib */; settings = {ASSET_TAGS = (); }; };
 		B70312731D2963FE00D09EE9 /* XYSTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B70312721D2963FE00D09EE9 /* XYSTextField.m */; settings = {ASSET_TAGS = (); }; };
 		B756DAB81D2D2F6400B9960A /* XYSTopicController.m in Sources */ = {isa = PBXBuildFile; fileRef = B756DAB71D2D2F6400B9960A /* XYSTopicController.m */; settings = {ASSET_TAGS = (); }; };
+		B76818311D3231C60044B7E3 /* NSDate+XYSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B76818301D3231C60044B7E3 /* NSDate+XYSExtension.m */; settings = {ASSET_TAGS = (); }; };
+		B768183D1D323DC20044B7E3 /* XYSUIConst.m in Sources */ = {isa = PBXBuildFile; fileRef = B768183C1D323DC20044B7E3 /* XYSUIConst.m */; settings = {ASSET_TAGS = (); }; };
+		B76818401D3245E30044B7E3 /* XYSTopicPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = B768183F1D3245E30044B7E3 /* XYSTopicPictureView.m */; settings = {ASSET_TAGS = (); }; };
+		B76818421D32460A0044B7E3 /* XYSTopicPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B76818411D32460A0044B7E3 /* XYSTopicPictureView.xib */; settings = {ASSET_TAGS = (); }; };
 		B77507921D2007D6009BA9F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B77507901D2007D6009BA9F2 /* Main.storyboard */; };
 		B77507941D2007D6009BA9F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B77507931D2007D6009BA9F2 /* Assets.xcassets */; };
 		B77507A21D2007D6009BA9F2 /* imitationOfBSBDJTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B77507A11D2007D6009BA9F2 /* imitationOfBSBDJTests.m */; };
@@ -84,6 +88,13 @@
 		B70312721D2963FE00D09EE9 /* XYSTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSTextField.m; sourceTree = "<group>"; };
 		B756DAB61D2D2F6400B9960A /* XYSTopicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSTopicController.h; sourceTree = "<group>"; };
 		B756DAB71D2D2F6400B9960A /* XYSTopicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSTopicController.m; sourceTree = "<group>"; };
+		B768182F1D3231C60044B7E3 /* NSDate+XYSExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+XYSExtension.h"; sourceTree = "<group>"; };
+		B76818301D3231C60044B7E3 /* NSDate+XYSExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+XYSExtension.m"; sourceTree = "<group>"; };
+		B768183B1D323DC20044B7E3 /* XYSUIConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSUIConst.h; sourceTree = "<group>"; };
+		B768183C1D323DC20044B7E3 /* XYSUIConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSUIConst.m; sourceTree = "<group>"; };
+		B768183E1D3245E30044B7E3 /* XYSTopicPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSTopicPictureView.h; sourceTree = "<group>"; };
+		B768183F1D3245E30044B7E3 /* XYSTopicPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSTopicPictureView.m; sourceTree = "<group>"; };
+		B76818411D32460A0044B7E3 /* XYSTopicPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYSTopicPictureView.xib; sourceTree = "<group>"; };
 		B77507841D2007D6009BA9F2 /* imitationOfBSBDJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imitationOfBSBDJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77507911D2007D6009BA9F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B77507931D2007D6009BA9F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -270,6 +281,8 @@
 				B77507F41D200F77009BA9F2 /* UIBarButtonItem+XYSExtension.m */,
 				B77507BD1D200808009BA9F2 /* UIView+XYSExtension.h */,
 				B77507BE1D200808009BA9F2 /* UIView+XYSExtension.m */,
+				B768182F1D3231C60044B7E3 /* NSDate+XYSExtension.h */,
+				B76818301D3231C60044B7E3 /* NSDate+XYSExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -322,6 +335,8 @@
 				B77507CB1D200808009BA9F2 /* AppDelegate.m */,
 				B77507CC1D200808009BA9F2 /* main.m */,
 				B77507CD1D200808009BA9F2 /* PrefixHeader.pch */,
+				B768183B1D323DC20044B7E3 /* XYSUIConst.h */,
+				B768183C1D323DC20044B7E3 /* XYSUIConst.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -369,6 +384,9 @@
 				B7BDDD3A1D2F8BFC0078714A /* XYSTopicCell.h */,
 				B7BDDD3B1D2F8BFC0078714A /* XYSTopicCell.m */,
 				B7BDDD3F1D2F8D530078714A /* XYSTopicCell.xib */,
+				B768183E1D3245E30044B7E3 /* XYSTopicPictureView.h */,
+				B768183F1D3245E30044B7E3 /* XYSTopicPictureView.m */,
+				B76818411D32460A0044B7E3 /* XYSTopicPictureView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -593,6 +611,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B76818421D32460A0044B7E3 /* XYSTopicPictureView.xib in Resources */,
 				B7BDDD401D2F8D530078714A /* XYSTopicCell.xib in Resources */,
 				B77507941D2007D6009BA9F2 /* Assets.xcassets in Resources */,
 				B77507921D2007D6009BA9F2 /* Main.storyboard in Resources */,
@@ -684,6 +703,7 @@
 				B77507EA1D200808009BA9F2 /* AppDelegate.m in Sources */,
 				B77507EE1D200808009BA9F2 /* XYSMeViewController.m in Sources */,
 				B77507E71D200808009BA9F2 /* XYSNavigationController.m in Sources */,
+				B76818401D3245E30044B7E3 /* XYSTopicPictureView.m in Sources */,
 				B703125A1D28F4B000D09EE9 /* XYSRecommendTagModel.m in Sources */,
 				B7BDDD391D2F85A80078714A /* XYSTopicModel.m in Sources */,
 				B70312621D2906DA00D09EE9 /* XYSLoginRegisterController.m in Sources */,
@@ -699,6 +719,8 @@
 				B77507EF1D200808009BA9F2 /* XYSNewViewController.m in Sources */,
 				B77507E61D200808009BA9F2 /* UIView+XYSExtension.m in Sources */,
 				B77507ED1D200808009BA9F2 /* XYSFriendTrendsViewController.m in Sources */,
+				B768183D1D323DC20044B7E3 /* XYSUIConst.m in Sources */,
+				B76818311D3231C60044B7E3 /* NSDate+XYSExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

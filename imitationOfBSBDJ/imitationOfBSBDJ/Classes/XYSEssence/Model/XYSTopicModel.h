@@ -25,4 +25,24 @@
 @property (nonatomic, assign) NSInteger repost;
 /** 评论的数量 */
 @property (nonatomic, assign) NSInteger comment;
+/** 小图片的URL */
+@property (nonatomic, copy) NSString *small_image;
+/** 中图片的URL */
+@property (nonatomic, copy) NSString *middle_image;
+/** 大图片的URL */
+@property (nonatomic, copy) NSString *large_image;
+/** 帖子的类型 */
+@property (nonatomic, assign) XYSTopicType type;
+/**图片视频声音的高度 */
+@property (nonatomic,assign)CGFloat height;
+/** 图片视频声音的宽度 */
+@property (nonatomic,assign)CGFloat width;
+
+//辅助属性
+/**内容的高度 */
+@property (nonatomic,assign,readonly)CGFloat topicCellHeight ;
+/**图片的frame */
+@property (nonatomic,assign,readonly)CGRect pictureViewFrame ;
+/**是否是大图片 */
+@property (nonatomic,assign,getter=isBigPicture)BOOL BigPicture ;
 @end
