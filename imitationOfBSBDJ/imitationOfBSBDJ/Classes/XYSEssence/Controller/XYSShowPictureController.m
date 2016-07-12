@@ -8,6 +8,7 @@
 
 #import "XYSShowPictureController.h"
 #import "XYSTopicModel.h"
+#import "XYSCircularProgressView.h"
 #import <UIImageView+WebCache.h>
 #import <SVProgressHUD.h>
 @interface XYSShowPictureController ()
@@ -15,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UIScrollView *contentScrollView;
 /** 显示的图片*/
 @property (nonatomic,weak)UIImageView *pictureView;
+@property (weak, nonatomic) IBOutlet XYSCircularProgressView *progressView;
 
 @end
 
@@ -26,9 +28,18 @@
     CGFloat screenW = [UIScreen mainScreen].bounds.size.width;
     CGFloat screenH = [UIScreen mainScreen].bounds.size.height;
 
+    [self.progressView setProgress:self.topicModel.progressPerc animated:YES];
     //显示图片
     UIImageView *imageView = [[UIImageView alloc]init];
-    [imageView sd_setImageWithURL:[NSURL URLWithString:self.topicModel.large_image]];
+    [imageView sd_setImageWithURL:[NSURL URLWithString:self.topicModel.large_image]placeholderImage:nil options:0 progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+        self.progressView.hidden = NO;
+        self.progressView.roundedCorners = 2.0;
+        self.topicModel.progressPerc =1.0 *receivedSize/expectedSize;
+        
+        [self.progressView setProgress:self.topicModel.progressPerc animated:NO];
+    } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        self.progressView.hidden = YES;
+    }];
     //添加点击手势
     imageView.userInteractionEnabled = YES;
     [imageView addGestureRecognizer:[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(back)]];

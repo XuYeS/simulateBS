@@ -45,4 +45,6 @@
 @property (nonatomic,assign,readonly)CGRect pictureViewFrame ;
 /**是否是大图片 */
 @property (nonatomic,assign,getter=isBigPicture)BOOL BigPicture ;
+/**图片下载进度 */
+@property (nonatomic,assign)CGFloat progressPerc ;
 @end

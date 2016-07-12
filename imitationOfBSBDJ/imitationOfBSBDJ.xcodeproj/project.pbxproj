@@ -16,6 +16,7 @@
 		B70312691D29448300D09EE9 /* XYSVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B70312681D29448300D09EE9 /* XYSVerticalButton.m */; settings = {ASSET_TAGS = (); }; };
 		B70312701D295DA500D09EE9 /* XYSLoginRegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B703126F1D295DA500D09EE9 /* XYSLoginRegisterController.xib */; settings = {ASSET_TAGS = (); }; };
 		B70312731D2963FE00D09EE9 /* XYSTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B70312721D2963FE00D09EE9 /* XYSTextField.m */; settings = {ASSET_TAGS = (); }; };
+		B71E92E91D34D9F500BBBF1C /* XYSCircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = B71E92E81D34D9F500BBBF1C /* XYSCircularProgressView.m */; settings = {ASSET_TAGS = (); }; };
 		B756DAB81D2D2F6400B9960A /* XYSTopicController.m in Sources */ = {isa = PBXBuildFile; fileRef = B756DAB71D2D2F6400B9960A /* XYSTopicController.m */; settings = {ASSET_TAGS = (); }; };
 		B76818311D3231C60044B7E3 /* NSDate+XYSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B76818301D3231C60044B7E3 /* NSDate+XYSExtension.m */; settings = {ASSET_TAGS = (); }; };
 		B768183D1D323DC20044B7E3 /* XYSUIConst.m in Sources */ = {isa = PBXBuildFile; fileRef = B768183C1D323DC20044B7E3 /* XYSUIConst.m */; settings = {ASSET_TAGS = (); }; };
@@ -88,6 +89,8 @@
 		B703126F1D295DA500D09EE9 /* XYSLoginRegisterController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYSLoginRegisterController.xib; sourceTree = "<group>"; };
 		B70312711D2963FE00D09EE9 /* XYSTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSTextField.h; sourceTree = "<group>"; };
 		B70312721D2963FE00D09EE9 /* XYSTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSTextField.m; sourceTree = "<group>"; };
+		B71E92E71D34D9F500BBBF1C /* XYSCircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSCircularProgressView.h; sourceTree = "<group>"; };
+		B71E92E81D34D9F500BBBF1C /* XYSCircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSCircularProgressView.m; sourceTree = "<group>"; };
 		B756DAB61D2D2F6400B9960A /* XYSTopicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSTopicController.h; sourceTree = "<group>"; };
 		B756DAB71D2D2F6400B9960A /* XYSTopicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSTopicController.m; sourceTree = "<group>"; };
 		B768182F1D3231C60044B7E3 /* NSDate+XYSExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+XYSExtension.h"; sourceTree = "<group>"; };
@@ -329,6 +332,8 @@
 				B70312681D29448300D09EE9 /* XYSVerticalButton.m */,
 				B70312711D2963FE00D09EE9 /* XYSTextField.h */,
 				B70312721D2963FE00D09EE9 /* XYSTextField.m */,
+				B71E92E71D34D9F500BBBF1C /* XYSCircularProgressView.h */,
+				B71E92E81D34D9F500BBBF1C /* XYSCircularProgressView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -715,6 +720,7 @@
 				B76818401D3245E30044B7E3 /* XYSTopicPictureView.m in Sources */,
 				B703125A1D28F4B000D09EE9 /* XYSRecommendTagModel.m in Sources */,
 				B7BDDD391D2F85A80078714A /* XYSTopicModel.m in Sources */,
+				B71E92E91D34D9F500BBBF1C /* XYSCircularProgressView.m in Sources */,
 				B70312621D2906DA00D09EE9 /* XYSLoginRegisterController.m in Sources */,
 				B70312521D28F09F00D09EE9 /* XYSRecommendTableViewController.m in Sources */,
 				B7DEB9FC1D250DEB007B58B3 /* XYSRecommendController.m in Sources */,
