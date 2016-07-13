@@ -9,6 +9,7 @@ target 'imitationOfBSBDJ' do
     pod "MJExtension"
     pod "MJRefresh"
     pod "DACircularProgress"
+    pod "pop"
 
 end
 

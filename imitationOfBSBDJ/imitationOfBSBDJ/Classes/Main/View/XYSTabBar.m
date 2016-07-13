@@ -7,6 +7,7 @@
 //
 
 #import "XYSTabBar.h"
+#import "XYSPublishView.h"
 @interface XYSTabBar()
 /**发布按钮*/
 @property (strong,nonatomic)UIButton *publishButton;
@@ -33,7 +34,7 @@
 
 -(void)tapPublish
 {
-    XYSLogFuc;
+    [XYSPublishView showPublishView];
 }
 
 -(void)layoutSubviews

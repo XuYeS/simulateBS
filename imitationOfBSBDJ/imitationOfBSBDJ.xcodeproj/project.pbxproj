@@ -17,6 +17,8 @@
 		B70312701D295DA500D09EE9 /* XYSLoginRegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B703126F1D295DA500D09EE9 /* XYSLoginRegisterController.xib */; settings = {ASSET_TAGS = (); }; };
 		B70312731D2963FE00D09EE9 /* XYSTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B70312721D2963FE00D09EE9 /* XYSTextField.m */; settings = {ASSET_TAGS = (); }; };
 		B71E92E91D34D9F500BBBF1C /* XYSCircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = B71E92E81D34D9F500BBBF1C /* XYSCircularProgressView.m */; settings = {ASSET_TAGS = (); }; };
+		B72C36781D365F51002D3DC3 /* XYSPublishView.m in Sources */ = {isa = PBXBuildFile; fileRef = B72C36771D365F51002D3DC3 /* XYSPublishView.m */; settings = {ASSET_TAGS = (); }; };
+		B72C367C1D365FFB002D3DC3 /* XYSPublishView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B72C367B1D365FFB002D3DC3 /* XYSPublishView.xib */; settings = {ASSET_TAGS = (); }; };
 		B756DAB81D2D2F6400B9960A /* XYSTopicController.m in Sources */ = {isa = PBXBuildFile; fileRef = B756DAB71D2D2F6400B9960A /* XYSTopicController.m */; settings = {ASSET_TAGS = (); }; };
 		B76818311D3231C60044B7E3 /* NSDate+XYSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B76818301D3231C60044B7E3 /* NSDate+XYSExtension.m */; settings = {ASSET_TAGS = (); }; };
 		B768183D1D323DC20044B7E3 /* XYSUIConst.m in Sources */ = {isa = PBXBuildFile; fileRef = B768183C1D323DC20044B7E3 /* XYSUIConst.m */; settings = {ASSET_TAGS = (); }; };
@@ -91,6 +93,9 @@
 		B70312721D2963FE00D09EE9 /* XYSTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSTextField.m; sourceTree = "<group>"; };
 		B71E92E71D34D9F500BBBF1C /* XYSCircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSCircularProgressView.h; sourceTree = "<group>"; };
 		B71E92E81D34D9F500BBBF1C /* XYSCircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSCircularProgressView.m; sourceTree = "<group>"; };
+		B72C36761D365F51002D3DC3 /* XYSPublishView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSPublishView.h; sourceTree = "<group>"; };
+		B72C36771D365F51002D3DC3 /* XYSPublishView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSPublishView.m; sourceTree = "<group>"; };
+		B72C367B1D365FFB002D3DC3 /* XYSPublishView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYSPublishView.xib; sourceTree = "<group>"; };
 		B756DAB61D2D2F6400B9960A /* XYSTopicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSTopicController.h; sourceTree = "<group>"; };
 		B756DAB71D2D2F6400B9960A /* XYSTopicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSTopicController.m; sourceTree = "<group>"; };
 		B768182F1D3231C60044B7E3 /* NSDate+XYSExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+XYSExtension.h"; sourceTree = "<group>"; };
@@ -334,6 +339,9 @@
 				B70312721D2963FE00D09EE9 /* XYSTextField.m */,
 				B71E92E71D34D9F500BBBF1C /* XYSCircularProgressView.h */,
 				B71E92E81D34D9F500BBBF1C /* XYSCircularProgressView.m */,
+				B72C36761D365F51002D3DC3 /* XYSPublishView.h */,
+				B72C36771D365F51002D3DC3 /* XYSPublishView.m */,
+				B72C367B1D365FFB002D3DC3 /* XYSPublishView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -633,6 +641,7 @@
 				B70312571D28F1FE00D09EE9 /* XYSRecommendTagCell.xib in Resources */,
 				B7DEBA101D2567FF007B58B3 /* XYSRightRecommendUserCell.xib in Resources */,
 				B7DEBA081D251E5A007B58B3 /* XYSLeftRecommendCell.xib in Resources */,
+				B72C367C1D365FFB002D3DC3 /* XYSPublishView.xib in Resources */,
 				B7DEB9FE1D250E08007B58B3 /* XYSRecommendController.xib in Resources */,
 				B703125E1D29022200D09EE9 /* XYSFriendTrendsViewController.xib in Resources */,
 			);
@@ -715,6 +724,7 @@
 				B7DEBA071D251E5A007B58B3 /* XYSLeftRecommendCell.m in Sources */,
 				B756DAB81D2D2F6400B9960A /* XYSTopicController.m in Sources */,
 				B77507EA1D200808009BA9F2 /* AppDelegate.m in Sources */,
+				B72C36781D365F51002D3DC3 /* XYSPublishView.m in Sources */,
 				B77507EE1D200808009BA9F2 /* XYSMeViewController.m in Sources */,
 				B77507E71D200808009BA9F2 /* XYSNavigationController.m in Sources */,
 				B76818401D3245E30044B7E3 /* XYSTopicPictureView.m in Sources */,
