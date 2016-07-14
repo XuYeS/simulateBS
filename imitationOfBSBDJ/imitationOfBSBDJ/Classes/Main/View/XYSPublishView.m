@@ -98,7 +98,7 @@ static UIWindow * window_;
         UIView *subView = self.subviews[i];
         POPSpringAnimation *animation = [POPSpringAnimation animationWithPropertyNamed:kPOPViewCenter];
         animation.toValue = [NSValue valueWithCGPoint:CGPointMake(subView.xys_centerX,subView.xys_centerY +600 )];
-        animation.beginTime = CACurrentMediaTime() + i*0.1;
+        animation.beginTime = CACurrentMediaTime() +i*0.1;
         [subView pop_addAnimation:animation forKey:nil];
         
         if (i == self.subviews.count - 1) {

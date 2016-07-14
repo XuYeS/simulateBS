@@ -52,15 +52,15 @@
 - (void)setupChildVCs
 {
     
-    XYSTopicController *picture = [[XYSTopicController alloc] init];
-    picture.title = @"图片";
-    picture.type = XYSTopicTypePicture;
-    [self addChildViewController:picture];
-    
     XYSTopicController *all = [[XYSTopicController alloc] init];
     all.title = @"全部";
     all.type = XYSTopicTypeAll;
     [self addChildViewController:all];
+    
+    XYSTopicController *picture = [[XYSTopicController alloc] init];
+    picture.title = @"图片";
+    picture.type = XYSTopicTypePicture;
+    [self addChildViewController:picture];
     
     XYSTopicController *video = [[XYSTopicController alloc] init];
     video.title = @"视频";

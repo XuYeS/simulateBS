@@ -8,6 +8,8 @@
 
 #import "XYSTopicCell.h"
 #import "XYSTopicPictureView.h"
+#import "XYSTopicVoiceView.h"
+#import "XYSTopicVideoView.h"
 #import <UIImageView+WebCache.h>
 @interface XYSTopicCell()
 @property (weak, nonatomic) IBOutlet UIImageView *headerImage;
@@ -20,9 +22,12 @@
 @property (weak, nonatomic) IBOutlet UILabel *topicTextLabel;
 
 
-/**帖子中间的内容*/
+/**图片帖子中间的内容*/
 @property (strong,nonatomic) XYSTopicPictureView *pictureView;
-
+/**声音帖子中间的内容*/
+@property (strong,nonatomic) XYSTopicVoiceView *voiceView;
+/**视频帖子中间的内容*/
+@property (strong,nonatomic) XYSTopicVideoView *videoView;
 @end
 @implementation XYSTopicCell
 
@@ -34,6 +39,26 @@
         _pictureView = pictureView;
     }
     return _pictureView;
+}
+
+- (XYSTopicVoiceView *)voiceView
+{
+    if (!_voiceView) {
+        XYSTopicVoiceView *voiceView = [XYSTopicVoiceView voiceView];
+        [self.contentView addSubview:voiceView];
+        _voiceView = voiceView;
+    }
+    return _voiceView;
+}
+
+- (XYSTopicVideoView *)videoView
+{
+    if (!_videoView) {
+        XYSTopicVideoView *videoView = [XYSTopicVideoView videoView];
+        [self.contentView addSubview:videoView];
+        _videoView = videoView;
+    }
+    return _videoView;
 }
 
 - (void)awakeFromNib {
@@ -63,9 +88,38 @@
     [self setupButtonTitle:self.repostButton count:topicModel.repost placeholder:@"转发"];
     [self setupButtonTitle:self.commenButton count:topicModel.comment placeholder:@"评论"];
     
-    if (self.topicModel.type == XYSTopicTypePicture) {
+    if (self.topicModel.type == XYSTopicTypePicture) {//图片
+        //防止全部中循环利用
+        self.pictureView.hidden = NO;
+        self.videoView.hidden = YES;
+        self.voiceView.hidden = YES;
+        
         self.pictureView.topicModel = topicModel;
         self.pictureView.frame = topicModel.pictureViewFrame;
+    }else if (self.topicModel.type == XYSTopicTypeVoice){//声音
+        //防止全部中循环利用
+        self.pictureView.hidden = YES;
+        self.videoView.hidden = YES;
+        self.voiceView.hidden = NO;
+        
+        self.voiceView.topicModel = topicModel;
+        self.voiceView.frame = topicModel.voiceViewFrame;
+        
+    }else if(self.topicModel.type == XYSTopicTypeVideo){//视频
+        //防止全部中循环利用
+        self.pictureView.hidden = YES;
+        self.videoView.hidden = NO;
+        self.voiceView.hidden = YES;
+
+        self.videoView.topicModel = topicModel;
+        self.videoView.frame = topicModel.videoViewFrame;
+       // XYSLog(@"%@",NSStringFromCGRect(self.videoView.frame));
+    }else if (self.topicModel.type == XYSTopicTypeJoke){//段子
+        //防止全部中循环利用
+        self.pictureView.hidden = YES;
+        self.videoView.hidden = YES;
+        self.voiceView.hidden = YES;
+        
     }
     
     

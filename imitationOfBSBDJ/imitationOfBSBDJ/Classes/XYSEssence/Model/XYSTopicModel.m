@@ -11,7 +11,6 @@
 @interface XYSTopicModel()
 {
     CGFloat _topicCellHeight;
-    CGRect _pictureViewFrame;
 }
 
 @end
@@ -52,6 +51,20 @@
             CGFloat pictureY = XYSTopicCellTextY + textHeight + XYSTopicCellMargin;
             _pictureViewFrame = CGRectMake(pictureX, pictureY, pictureWidth, pictureHeight);
             _topicCellHeight += pictureHeight + XYSTopicCellMargin;
+        }else if (self.type == XYSTopicTypeVoice){
+            CGFloat voiceX = XYSTopicCellMargin ;
+            CGFloat voiceY = XYSTopicCellTextY + textHeight + XYSTopicCellMargin ;
+            CGFloat voiceWidth = maxSize.width;
+            CGFloat voiceHeight = self.height*voiceWidth/self.width;
+            _voiceViewFrame = CGRectMake(voiceX, voiceY, voiceWidth, voiceHeight);
+            _topicCellHeight += voiceHeight + XYSTopicCellMargin;
+        }else if (self.type == XYSTopicTypeVideo){
+            CGFloat videoX = XYSTopicCellMargin ;
+            CGFloat videoY = XYSTopicCellTextY + textHeight + XYSTopicCellMargin ;
+            CGFloat videoWidth = maxSize.width;
+            CGFloat videoHeight = self.height*videoWidth/self.width;
+            _videoViewFrame = CGRectMake(videoX, videoY, videoWidth, videoHeight);
+            _topicCellHeight += videoHeight + XYSTopicCellMargin;
         }
     
     }

@@ -44,6 +44,8 @@
 		B7BDDD391D2F85A80078714A /* XYSTopicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B7BDDD381D2F85A80078714A /* XYSTopicModel.m */; settings = {ASSET_TAGS = (); }; };
 		B7BDDD3D1D2F8BFC0078714A /* XYSTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7BDDD3B1D2F8BFC0078714A /* XYSTopicCell.m */; settings = {ASSET_TAGS = (); }; };
 		B7BDDD401D2F8D530078714A /* XYSTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7BDDD3F1D2F8D530078714A /* XYSTopicCell.xib */; settings = {ASSET_TAGS = (); }; };
+		B7D8563E1D378A72009EAF7E /* XYSTopicVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = B7D8563D1D378A72009EAF7E /* XYSTopicVoiceView.m */; settings = {ASSET_TAGS = (); }; };
+		B7D856401D378A7E009EAF7E /* XYSTopicVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7D8563F1D378A7E009EAF7E /* XYSTopicVoiceView.xib */; settings = {ASSET_TAGS = (); }; };
 		B7DEB9FC1D250DEB007B58B3 /* XYSRecommendController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEB9FB1D250DEB007B58B3 /* XYSRecommendController.m */; settings = {ASSET_TAGS = (); }; };
 		B7DEB9FE1D250E08007B58B3 /* XYSRecommendController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7DEB9FD1D250E07007B58B3 /* XYSRecommendController.xib */; settings = {ASSET_TAGS = (); }; };
 		B7DEBA071D251E5A007B58B3 /* XYSLeftRecommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEBA051D251E5A007B58B3 /* XYSLeftRecommendCell.m */; settings = {ASSET_TAGS = (); }; };
@@ -52,6 +54,8 @@
 		B7DEBA0F1D2567FF007B58B3 /* XYSRightRecommendUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEBA0D1D2567FF007B58B3 /* XYSRightRecommendUserCell.m */; settings = {ASSET_TAGS = (); }; };
 		B7DEBA101D2567FF007B58B3 /* XYSRightRecommendUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7DEBA0E1D2567FF007B58B3 /* XYSRightRecommendUserCell.xib */; settings = {ASSET_TAGS = (); }; };
 		B7DEBA131D256ADC007B58B3 /* XYSRightRecommendUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEBA121D256ADC007B58B3 /* XYSRightRecommendUserModel.m */; settings = {ASSET_TAGS = (); }; };
+		B7E70C241D37D4C900815896 /* XYSTopicVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E70C231D37D4C900815896 /* XYSTopicVideoView.m */; settings = {ASSET_TAGS = (); }; };
+		B7E70C2C1D37D88800815896 /* XYSTopicVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7E70C2B1D37D88800815896 /* XYSTopicVideoView.xib */; settings = {ASSET_TAGS = (); }; };
 		D7B58BEBCCBCF23C3768049D /* libPods-imitationOfBSBDJ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DD1CA3322CF269599AEF96 /* libPods-imitationOfBSBDJ.a */; };
 /* End PBXBuildFile section */
 
@@ -145,6 +149,9 @@
 		B7BDDD3A1D2F8BFC0078714A /* XYSTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSTopicCell.h; sourceTree = "<group>"; };
 		B7BDDD3B1D2F8BFC0078714A /* XYSTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSTopicCell.m; sourceTree = "<group>"; };
 		B7BDDD3F1D2F8D530078714A /* XYSTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYSTopicCell.xib; sourceTree = "<group>"; };
+		B7D8563C1D378A72009EAF7E /* XYSTopicVoiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSTopicVoiceView.h; sourceTree = "<group>"; };
+		B7D8563D1D378A72009EAF7E /* XYSTopicVoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSTopicVoiceView.m; sourceTree = "<group>"; };
+		B7D8563F1D378A7E009EAF7E /* XYSTopicVoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYSTopicVoiceView.xib; sourceTree = "<group>"; };
 		B7DEB9FA1D250DEB007B58B3 /* XYSRecommendController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSRecommendController.h; sourceTree = "<group>"; };
 		B7DEB9FB1D250DEB007B58B3 /* XYSRecommendController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSRecommendController.m; sourceTree = "<group>"; };
 		B7DEB9FD1D250E07007B58B3 /* XYSRecommendController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYSRecommendController.xib; sourceTree = "<group>"; };
@@ -158,6 +165,9 @@
 		B7DEBA0E1D2567FF007B58B3 /* XYSRightRecommendUserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYSRightRecommendUserCell.xib; sourceTree = "<group>"; };
 		B7DEBA111D256ADC007B58B3 /* XYSRightRecommendUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSRightRecommendUserModel.h; sourceTree = "<group>"; };
 		B7DEBA121D256ADC007B58B3 /* XYSRightRecommendUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSRightRecommendUserModel.m; sourceTree = "<group>"; };
+		B7E70C221D37D4C900815896 /* XYSTopicVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSTopicVideoView.h; sourceTree = "<group>"; };
+		B7E70C231D37D4C900815896 /* XYSTopicVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSTopicVideoView.m; sourceTree = "<group>"; };
+		B7E70C2B1D37D88800815896 /* XYSTopicVideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYSTopicVideoView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -408,6 +418,12 @@
 				B768183E1D3245E30044B7E3 /* XYSTopicPictureView.h */,
 				B768183F1D3245E30044B7E3 /* XYSTopicPictureView.m */,
 				B76818411D32460A0044B7E3 /* XYSTopicPictureView.xib */,
+				B7D8563C1D378A72009EAF7E /* XYSTopicVoiceView.h */,
+				B7D8563D1D378A72009EAF7E /* XYSTopicVoiceView.m */,
+				B7D8563F1D378A7E009EAF7E /* XYSTopicVoiceView.xib */,
+				B7E70C221D37D4C900815896 /* XYSTopicVideoView.h */,
+				B7E70C231D37D4C900815896 /* XYSTopicVideoView.m */,
+				B7E70C2B1D37D88800815896 /* XYSTopicVideoView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -633,8 +649,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B76818471D32713B0044B7E3 /* XYSShowPictureController.xib in Resources */,
+				B7E70C2C1D37D88800815896 /* XYSTopicVideoView.xib in Resources */,
 				B76818421D32460A0044B7E3 /* XYSTopicPictureView.xib in Resources */,
 				B7BDDD401D2F8D530078714A /* XYSTopicCell.xib in Resources */,
+				B7D856401D378A7E009EAF7E /* XYSTopicVoiceView.xib in Resources */,
 				B77507941D2007D6009BA9F2 /* Assets.xcassets in Resources */,
 				B77507921D2007D6009BA9F2 /* Main.storyboard in Resources */,
 				B70312701D295DA500D09EE9 /* XYSLoginRegisterController.xib in Resources */,
@@ -719,6 +737,7 @@
 				B7DEBA0B1D25354E007B58B3 /* XYSLeftRecommendModel.m in Sources */,
 				B77507E81D200808009BA9F2 /* XYSTabBarController.m in Sources */,
 				B77507E91D200808009BA9F2 /* XYSTabBar.m in Sources */,
+				B7D8563E1D378A72009EAF7E /* XYSTopicVoiceView.m in Sources */,
 				B7DEBA131D256ADC007B58B3 /* XYSRightRecommendUserModel.m in Sources */,
 				B7BDDD3D1D2F8BFC0078714A /* XYSTopicCell.m in Sources */,
 				B7DEBA071D251E5A007B58B3 /* XYSLeftRecommendCell.m in Sources */,
@@ -743,6 +762,7 @@
 				B70312731D2963FE00D09EE9 /* XYSTextField.m in Sources */,
 				B77507EF1D200808009BA9F2 /* XYSNewViewController.m in Sources */,
 				B76818461D32713B0044B7E3 /* XYSShowPictureController.m in Sources */,
+				B7E70C241D37D4C900815896 /* XYSTopicVideoView.m in Sources */,
 				B77507E61D200808009BA9F2 /* UIView+XYSExtension.m in Sources */,
 				B77507ED1D200808009BA9F2 /* XYSFriendTrendsViewController.m in Sources */,
 				B768183D1D323DC20044B7E3 /* XYSUIConst.m in Sources */,

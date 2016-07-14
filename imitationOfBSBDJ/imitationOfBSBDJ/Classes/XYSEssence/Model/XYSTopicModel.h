@@ -33,12 +33,24 @@
 @property (nonatomic, copy) NSString *large_image;
 /** 帖子的类型 */
 @property (nonatomic, assign) XYSTopicType type;
+
+//--------图片
 /**图片视频声音的高度 */
 @property (nonatomic,assign)CGFloat height;
 /** 图片视频声音的宽度 */
 @property (nonatomic,assign)CGFloat width;
 
-//辅助属性
+//--------声音
+/**声音时间 */
+@property (nonatomic,assign)NSInteger voicetime ;
+/**播放次数 */
+@property (nonatomic,assign)NSInteger playfcount ;
+
+//--------视频
+/**视频时间 */
+@property (nonatomic,assign)NSInteger videotime ;
+
+//--------辅助属性
 /**内容的高度 */
 @property (nonatomic,assign,readonly)CGFloat topicCellHeight ;
 /**图片的frame */
@@ -47,4 +59,10 @@
 @property (nonatomic,assign,getter=isBigPicture)BOOL BigPicture ;
 /**图片下载进度 */
 @property (nonatomic,assign)CGFloat progressPerc ;
+
+
+/**声音帖子的frame */
+@property (nonatomic,assign,readonly)CGRect voiceViewFrame ;
+/**视频帖子的frame */
+@property (nonatomic,assign,readonly)CGRect videoViewFrame ;
 @end
