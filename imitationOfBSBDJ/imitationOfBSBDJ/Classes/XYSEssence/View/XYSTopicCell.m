@@ -10,6 +10,8 @@
 #import "XYSTopicPictureView.h"
 #import "XYSTopicVoiceView.h"
 #import "XYSTopicVideoView.h"
+#import "XYSTopCommentModel.h"
+#import "XYSUser.h"
 #import <UIImageView+WebCache.h>
 @interface XYSTopicCell()
 @property (weak, nonatomic) IBOutlet UIImageView *headerImage;
@@ -20,6 +22,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *repostButton;
 @property (weak, nonatomic) IBOutlet UIButton *commenButton;
 @property (weak, nonatomic) IBOutlet UILabel *topicTextLabel;
+@property (weak, nonatomic) IBOutlet UIView *topCommentView;
+@property (weak, nonatomic) IBOutlet UILabel *topCommentTextLabel;
 
 
 /**图片帖子中间的内容*/
@@ -120,6 +124,16 @@
         self.videoView.hidden = YES;
         self.voiceView.hidden = YES;
         
+    }
+    
+    XYSTopCommentModel *commentModel = [self.topicModel.top_cmt firstObject];
+
+    if (commentModel) {
+        self.topCommentView.hidden = NO;
+        self.topCommentTextLabel.text = [NSString stringWithFormat:@"%@: %@",commentModel.user.username,commentModel.content];
+    }else{
+        self.topCommentView.hidden = YES;
+
     }
     
     

@@ -7,6 +7,8 @@
 //
 
 #import "XYSTopicModel.h"
+#import "XYSTopCommentModel.h"
+#import "XYSUser.h"
 #import <MJExtension.h>
 @interface XYSTopicModel()
 {
@@ -24,6 +26,10 @@
              @"middle_image" : @"image2"
              };
 }
++(NSDictionary *)mj_objectClassInArray
+{
+    return @{@"top_cmt" : @"XYSTopCommentModel"};
+}
 
 -(CGFloat)topicCellHeight
 {
@@ -38,6 +44,7 @@
        CGFloat textHeight = [self.text boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:attr context:nil].size.height;
         _topicCellHeight = XYSTopicCellTextY + XYSTopicCellMargin + textHeight +2* XYSTopicCellMargin + XYSTopicCellBottomBarH;
         
+        //中间内容高度
         if (self.type == XYSTopicTypePicture) {
             CGFloat pictureWidth = maxSize.width;
             CGFloat pictureHeight = self.height *pictureWidth/self.width;
@@ -65,6 +72,13 @@
             CGFloat videoHeight = self.height*videoWidth/self.width;
             _videoViewFrame = CGRectMake(videoX, videoY, videoWidth, videoHeight);
             _topicCellHeight += videoHeight + XYSTopicCellMargin;
+        }
+        
+        //最热评论高度
+        XYSTopCommentModel *commentModel = [self.top_cmt firstObject];
+        if (commentModel) {
+            NSString *content = [NSString stringWithFormat:@"%@: %@",commentModel.user.username,commentModel.content];
+            _topicCellHeight+=2*XYSTopicCellMargin+[content boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:13]} context:nil].size.height;
         }
     
     }

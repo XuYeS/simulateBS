@@ -81,6 +81,7 @@ static NSString * cellId = @"topicCell";
         self.maxtime = responseObject[@"info"][@"maxtime"];
         //字典转模型
         self.listOfTopicModel= [XYSTopicModel mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
+        
         //刷新tableview
         [self.tableView reloadData];
         

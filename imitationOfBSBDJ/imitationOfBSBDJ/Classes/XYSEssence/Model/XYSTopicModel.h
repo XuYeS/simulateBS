@@ -33,6 +33,8 @@
 @property (nonatomic, copy) NSString *large_image;
 /** 帖子的类型 */
 @property (nonatomic, assign) XYSTopicType type;
+/**最热评论 */
+@property (nonatomic,strong)NSArray *top_cmt ;
 
 //--------图片
 /**图片视频声音的高度 */
