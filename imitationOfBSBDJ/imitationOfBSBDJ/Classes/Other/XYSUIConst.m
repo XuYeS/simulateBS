@@ -22,3 +22,7 @@ CGFloat const XYSTopicCellBottomBarH = 44;
 CGFloat const XYSMaxPictureHeight = 800;
 /**超过最大图片长度后显示的长度*/
 CGFloat const XYSClipPictureHeight = 220;
+
+/** XMGUser模型-性别属性值 */
+NSString * const XYSUserSexMale = @"m";
+NSString * const XYSUserSexFemale = @"f";

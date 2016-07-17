@@ -9,6 +9,7 @@
 #import "XYSTopicController.h"
 #import "XYSTopicModel.h"
 #import "XYSTopicCell.h"
+#import "XYSCommentController.h"
 #import <AFNetworking.h>
 #import <MJExtension.h>
 #import <SVProgressHUD.h>
@@ -156,6 +157,13 @@ static NSString * cellId = @"topicCell";
 {
     XYSTopicModel *model = self.listOfTopicModel[indexPath.row];
     return model.topicCellHeight;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    XYSCommentController *cc = [[XYSCommentController alloc]init];
+    cc.topicModel = self.listOfTopicModel[indexPath.row];
+    [self.navigationController pushViewController:cc animated:YES];
 }
 
 @end

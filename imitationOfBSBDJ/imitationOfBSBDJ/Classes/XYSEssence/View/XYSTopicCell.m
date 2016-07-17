@@ -34,7 +34,11 @@
 @property (strong,nonatomic) XYSTopicVideoView *videoView;
 @end
 @implementation XYSTopicCell
-
++(instancetype)cell{
+    
+    return [[[NSBundle mainBundle]loadNibNamed:NSStringFromClass(self) owner:nil options:nil]firstObject];
+    
+}
 - (XYSTopicPictureView *)pictureView
 {
     if (!_pictureView) {
@@ -75,7 +79,7 @@
 {
     frame.origin.x = XYSTopicCellMargin;
     frame.size.width -=2*frame.origin.x ;
-    frame.size.height -= frame.origin.x;
+    frame.size.height = self.topicModel.topicCellHeight - XYSTopicCellMargin;
     frame.origin.y += XYSTopicCellMargin;
     [super setFrame:frame];
 }

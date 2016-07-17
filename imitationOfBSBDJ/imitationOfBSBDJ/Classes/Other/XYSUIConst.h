@@ -32,3 +32,7 @@ UIKIT_EXTERN CGFloat const XYSTopicCellBottomBarH ;
 UIKIT_EXTERN CGFloat const XYSMaxPictureHeight ;
 /**超过最大图片长度后显示的长度*/
 UIKIT_EXTERN CGFloat const XYSClipPictureHeight ;
+
+/** XMGUser模型-性别属性值 */
+UIKIT_EXTERN NSString * const XYSUserSexMale;
+UIKIT_EXTERN NSString * const XYSUserSexFemale ;

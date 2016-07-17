@@ -1,18 +1,15 @@
 //
-//  XYSTopicCell.h
+//  XYSCommentController.h
 //  imitationOfBSBDJ
 //
-//  Created by 徐烨晟 on 16/7/8.
+//  Created by 徐烨晟 on 16/7/17.
 //  Copyright © 2016年 徐烨晟. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "XYSTopicModel.h"
+@class XYSTopicModel;
+@interface XYSCommentController : UIViewController
 
-@interface XYSTopicCell : UITableViewCell
-
-/**topic模型 */
+/**模型数据 */
 @property (nonatomic,strong)XYSTopicModel *topicModel ;
-
-+(instancetype)cell;
 @end

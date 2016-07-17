@@ -6,8 +6,8 @@
 //  Copyright © 2016年 徐烨晟. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "XYSEssenceViewController.h"
 
-@interface XYSNewViewController : UIViewController
+@interface XYSNewViewController : XYSEssenceViewController
 
 @end

@@ -9,5 +9,10 @@
 #import "XYSTopCommentModel.h"
 
 @implementation XYSTopCommentModel
-
++(NSDictionary*)mj_replacedKeyFromPropertyName
+{
+    return @{
+             @"commentId":@"id",
+             };
+}
 @end

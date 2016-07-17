@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 @class XYSUser;
 @interface XYSTopCommentModel : NSObject
+/** 评论ID */
+@property (nonatomic,copy)NSString *commentId;
 /**喜欢次数 */
 @property (nonatomic,assign)NSInteger like_count ;
 /** 音频文件的时长 */

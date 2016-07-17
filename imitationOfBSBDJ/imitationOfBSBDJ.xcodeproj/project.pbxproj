@@ -21,6 +21,10 @@
 		B72C367C1D365FFB002D3DC3 /* XYSPublishView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B72C367B1D365FFB002D3DC3 /* XYSPublishView.xib */; settings = {ASSET_TAGS = (); }; };
 		B72CFCBE1D3A764E00C4889C /* XYSTopCommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B72CFCBD1D3A764E00C4889C /* XYSTopCommentModel.m */; settings = {ASSET_TAGS = (); }; };
 		B72CFCC11D3A771500C4889C /* XYSUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B72CFCC01D3A771500C4889C /* XYSUser.m */; settings = {ASSET_TAGS = (); }; };
+		B73542001D3B651600A3023B /* XYSCommentController.m in Sources */ = {isa = PBXBuildFile; fileRef = B73541FE1D3B651600A3023B /* XYSCommentController.m */; settings = {ASSET_TAGS = (); }; };
+		B73542011D3B651600A3023B /* XYSCommentController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B73541FF1D3B651600A3023B /* XYSCommentController.xib */; settings = {ASSET_TAGS = (); }; };
+		B73542061D3B774100A3023B /* XYSCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B73542041D3B774100A3023B /* XYSCommentCell.xib */; settings = {ASSET_TAGS = (); }; };
+		B73542091D3B779F00A3023B /* XYSCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B73542081D3B779F00A3023B /* XYSCommentCell.m */; settings = {ASSET_TAGS = (); }; };
 		B756DAB81D2D2F6400B9960A /* XYSTopicController.m in Sources */ = {isa = PBXBuildFile; fileRef = B756DAB71D2D2F6400B9960A /* XYSTopicController.m */; settings = {ASSET_TAGS = (); }; };
 		B76818311D3231C60044B7E3 /* NSDate+XYSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B76818301D3231C60044B7E3 /* NSDate+XYSExtension.m */; settings = {ASSET_TAGS = (); }; };
 		B768183D1D323DC20044B7E3 /* XYSUIConst.m in Sources */ = {isa = PBXBuildFile; fileRef = B768183C1D323DC20044B7E3 /* XYSUIConst.m */; settings = {ASSET_TAGS = (); }; };
@@ -106,6 +110,12 @@
 		B72CFCBD1D3A764E00C4889C /* XYSTopCommentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSTopCommentModel.m; sourceTree = "<group>"; };
 		B72CFCBF1D3A771500C4889C /* XYSUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSUser.h; sourceTree = "<group>"; };
 		B72CFCC01D3A771500C4889C /* XYSUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSUser.m; sourceTree = "<group>"; };
+		B73541FD1D3B651600A3023B /* XYSCommentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSCommentController.h; sourceTree = "<group>"; };
+		B73541FE1D3B651600A3023B /* XYSCommentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSCommentController.m; sourceTree = "<group>"; };
+		B73541FF1D3B651600A3023B /* XYSCommentController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYSCommentController.xib; sourceTree = "<group>"; };
+		B73542041D3B774100A3023B /* XYSCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYSCommentCell.xib; sourceTree = "<group>"; };
+		B73542071D3B779F00A3023B /* XYSCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSCommentCell.h; sourceTree = "<group>"; };
+		B73542081D3B779F00A3023B /* XYSCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSCommentCell.m; sourceTree = "<group>"; };
 		B756DAB61D2D2F6400B9960A /* XYSTopicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSTopicController.h; sourceTree = "<group>"; };
 		B756DAB71D2D2F6400B9960A /* XYSTopicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSTopicController.m; sourceTree = "<group>"; };
 		B768182F1D3231C60044B7E3 /* NSDate+XYSExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+XYSExtension.h"; sourceTree = "<group>"; };
@@ -397,6 +407,9 @@
 				B76818431D32713B0044B7E3 /* XYSShowPictureController.h */,
 				B76818441D32713B0044B7E3 /* XYSShowPictureController.m */,
 				B76818451D32713B0044B7E3 /* XYSShowPictureController.xib */,
+				B73541FD1D3B651600A3023B /* XYSCommentController.h */,
+				B73541FE1D3B651600A3023B /* XYSCommentController.m */,
+				B73541FF1D3B651600A3023B /* XYSCommentController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -434,6 +447,9 @@
 				B7E70C221D37D4C900815896 /* XYSTopicVideoView.h */,
 				B7E70C231D37D4C900815896 /* XYSTopicVideoView.m */,
 				B7E70C2B1D37D88800815896 /* XYSTopicVideoView.xib */,
+				B73542071D3B779F00A3023B /* XYSCommentCell.h */,
+				B73542081D3B779F00A3023B /* XYSCommentCell.m */,
+				B73542041D3B774100A3023B /* XYSCommentCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -660,6 +676,7 @@
 			files = (
 				B76818471D32713B0044B7E3 /* XYSShowPictureController.xib in Resources */,
 				B7E70C2C1D37D88800815896 /* XYSTopicVideoView.xib in Resources */,
+				B73542061D3B774100A3023B /* XYSCommentCell.xib in Resources */,
 				B76818421D32460A0044B7E3 /* XYSTopicPictureView.xib in Resources */,
 				B7BDDD401D2F8D530078714A /* XYSTopicCell.xib in Resources */,
 				B7D856401D378A7E009EAF7E /* XYSTopicVoiceView.xib in Resources */,
@@ -671,6 +688,7 @@
 				B7DEBA081D251E5A007B58B3 /* XYSLeftRecommendCell.xib in Resources */,
 				B72C367C1D365FFB002D3DC3 /* XYSPublishView.xib in Resources */,
 				B7DEB9FE1D250E08007B58B3 /* XYSRecommendController.xib in Resources */,
+				B73542011D3B651600A3023B /* XYSCommentController.xib in Resources */,
 				B703125E1D29022200D09EE9 /* XYSFriendTrendsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -754,6 +772,7 @@
 				B756DAB81D2D2F6400B9960A /* XYSTopicController.m in Sources */,
 				B77507EA1D200808009BA9F2 /* AppDelegate.m in Sources */,
 				B72C36781D365F51002D3DC3 /* XYSPublishView.m in Sources */,
+				B73542091D3B779F00A3023B /* XYSCommentCell.m in Sources */,
 				B77507EE1D200808009BA9F2 /* XYSMeViewController.m in Sources */,
 				B77507E71D200808009BA9F2 /* XYSNavigationController.m in Sources */,
 				B76818401D3245E30044B7E3 /* XYSTopicPictureView.m in Sources */,
@@ -772,6 +791,7 @@
 				B77507F51D200F77009BA9F2 /* UIBarButtonItem+XYSExtension.m in Sources */,
 				B70312731D2963FE00D09EE9 /* XYSTextField.m in Sources */,
 				B77507EF1D200808009BA9F2 /* XYSNewViewController.m in Sources */,
+				B73542001D3B651600A3023B /* XYSCommentController.m in Sources */,
 				B76818461D32713B0044B7E3 /* XYSShowPictureController.m in Sources */,
 				B7E70C241D37D4C900815896 /* XYSTopicVideoView.m in Sources */,
 				B77507E61D200808009BA9F2 /* UIView+XYSExtension.m in Sources */,

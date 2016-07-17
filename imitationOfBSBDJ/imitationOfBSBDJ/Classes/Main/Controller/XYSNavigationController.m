@@ -47,6 +47,9 @@
        
        [btn addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:btn];
+       
+       //跳转到评论vc时隐藏tabbar
+       viewController.hidesBottomBarWhenPushed = YES;
    }
     
     [super pushViewController:viewController animated:animated];

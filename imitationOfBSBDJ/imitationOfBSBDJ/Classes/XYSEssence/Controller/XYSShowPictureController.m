@@ -24,7 +24,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    SVProgressHUD.minimumDismissTimeInterval = 1.0;
+
     CGFloat screenW = [UIScreen mainScreen].bounds.size.width;
     CGFloat screenH = [UIScreen mainScreen].bounds.size.height;
 
@@ -88,10 +89,6 @@
     } else {
         [SVProgressHUD showSuccessWithStatus:@"保存成功!"];
     }
-    [UIView animateWithDuration:2 animations:^{
-        [SVProgressHUD dismiss];
-    }];
-
 }
 
 @end
