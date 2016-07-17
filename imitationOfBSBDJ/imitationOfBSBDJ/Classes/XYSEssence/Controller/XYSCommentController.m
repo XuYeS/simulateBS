@@ -22,13 +22,24 @@
 @property (strong,nonatomic)NSMutableArray *listOfHotComment;
 /** 普通评论*/
 @property (strong,nonatomic)NSMutableArray *listOfComment;
-
+/** 最后一个评论的ID*/
 @property (strong,nonatomic)NSString *lastId;
 
+/** AFN manger*/
+@property (strong,nonatomic)AFHTTPSessionManager *manger;
 @end
 
 @implementation XYSCommentController
+#pragma mark - lazy
+-(AFHTTPSessionManager *)manger
+{
+    if (!_manger) {
+        _manger = [AFHTTPSessionManager manager];
+    }
+    return _manger;
+}
 
+#pragma mark - init
 
 static NSString *commentCellId = @"commentCell";
 - (void)viewDidLoad {
@@ -41,6 +52,7 @@ static NSString *commentCellId = @"commentCell";
     
     self.tableView.estimatedRowHeight = 40;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
     [self setUpHeaderCell];
     
@@ -107,6 +119,8 @@ static NSString *commentCellId = @"commentCell";
  */
 -(void)loadNewComment
 {
+    //取消其他所有网络任务
+    [self.manger.tasks makeObjectsPerformSelector:@selector(cancel)];
     //参数
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
     parameters[@"a"] = @"dataList";
@@ -114,7 +128,7 @@ static NSString *commentCellId = @"commentCell";
     parameters[@"data_id"] = self.topicModel.ID;
     parameters[@"hot"] = @"1";
     
-    [[AFHTTPSessionManager manager]GET:@"http://api.budejie.com/api/api_open.php" parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [self.manger GET:@"http://api.budejie.com/api/api_open.php" parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         self.listOfHotComment = [XYSTopCommentModel mj_objectArrayWithKeyValuesArray:responseObject[@"hot"]];
         
         self.listOfComment = [XYSTopCommentModel mj_objectArrayWithKeyValuesArray:responseObject[@"data"]];
@@ -133,6 +147,9 @@ static NSString *commentCellId = @"commentCell";
 }
 -(void)loadMoreComment
 {
+    //取消其他所有网络任务
+    [self.manger.tasks makeObjectsPerformSelector:@selector(cancel)];
+    //参数
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
     parameters[@"a"] = @"dataList";
     parameters[@"c"] = @"comment";
@@ -140,7 +157,7 @@ static NSString *commentCellId = @"commentCell";
     parameters[@"hot"] = @"1";
     parameters[@"lastcid"] = self.lastId;
     
-    [[AFHTTPSessionManager manager]GET:@"http://api.budejie.com/api/api_open.php" parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [self.manger GET:@"http://api.budejie.com/api/api_open.php" parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         [self.tableView.mj_footer endRefreshing];
 
         NSArray *commentArray = [XYSTopCommentModel mj_objectArrayWithKeyValuesArray:responseObject[@"data"]];
@@ -162,6 +179,8 @@ static NSString *commentCellId = @"commentCell";
 -(void)dealloc
 {
     [[NSNotificationCenter defaultCenter]removeObserver:self];
+    
+    [self.manger invalidateSessionCancelingTasks:YES];
 }
 
 

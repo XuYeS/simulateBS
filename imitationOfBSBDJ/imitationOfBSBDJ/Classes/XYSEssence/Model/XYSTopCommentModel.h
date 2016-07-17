@@ -19,4 +19,7 @@
 @property (nonatomic, copy) NSString *content;
 /** 用户 */
 @property (nonatomic, strong) XYSUser *user;
+
+/** 声音评论 */
+@property (nonatomic,copy)NSString *voiceuri;
 @end

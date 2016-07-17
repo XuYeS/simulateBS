@@ -16,14 +16,18 @@
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *commentLabel;
 @property (weak, nonatomic) IBOutlet UILabel *likeNumLabel;
+@property (weak, nonatomic) IBOutlet UIButton *voiceButton;
 
 
 @end
 @implementation XYSCommentCell
 
 - (void)awakeFromNib {
-    // Initialization code
+    UIImageView *bgView = [[UIImageView alloc] init];
+    bgView.image = [UIImage imageNamed:@"mainCellBackground"];
+    self.backgroundView = bgView;
 }
+
 
 -(void)setCommentModel:(XYSTopCommentModel *)commentModel
 {
@@ -38,5 +42,20 @@
     
     self.likeNumLabel.text = [NSString stringWithFormat:@"%zd",commentModel.like_count];
     
+    if (commentModel.voiceuri.length) {
+        self.voiceButton.hidden = NO;
+        [self.voiceButton setTitle:[NSString stringWithFormat:@"%zd''", commentModel.voicetime] forState:UIControlStateNormal];
+    }else{
+        self.voiceButton.hidden = YES;
+    
+    }
+    
+}
+
+-(void)setFrame:(CGRect)frame
+{
+    frame.origin.x = XYSTopicCellMargin;
+    frame.size.width -=2 * frame.origin.x;
+    [super setFrame:frame];
 }
 @end
