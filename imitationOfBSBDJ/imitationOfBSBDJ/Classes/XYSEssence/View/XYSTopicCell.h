@@ -13,6 +13,10 @@
 
 /**topic模型 */
 @property (nonatomic,strong)XYSTopicModel *topicModel ;
+/** 点击block */
+@property (nonatomic,copy)void (^commentTap)(void) ;
 
 +(instancetype)cell;
+
+
 @end

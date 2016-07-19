@@ -7,7 +7,7 @@
 //
 
 #import "XYSLoginRegisterController.h"
-
+#import "XYSRollBackWindow.h"
 @interface XYSLoginRegisterController ()
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *leftMargin;
 @property (weak, nonatomic) IBOutlet UIView *longinView;
@@ -22,6 +22,7 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+    [XYSRollBackWindow hide];
     [self.longinView layoutIfNeeded];
     if (self.isLogin) {
         self.registerButton.selected = NO;
@@ -44,6 +45,7 @@
     return UIStatusBarStyleLightContent;
 }
 - (IBAction)back:(id)sender {
+    [XYSRollBackWindow show];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

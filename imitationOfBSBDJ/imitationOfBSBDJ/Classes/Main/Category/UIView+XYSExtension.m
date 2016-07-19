@@ -84,4 +84,19 @@
 {
     return self.center.y;
 }
+-(BOOL)isOnCurrentScreen
+{
+    UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
+    CGRect newFrame = [self.superview convertRect:self.frame toView:nil];
+    CGRect windowFrame = keyWindow.frame;
+    BOOL isInWindow = CGRectIntersectsRect(newFrame, windowFrame);
+    
+    if (!self.hidden && self.alpha>0.01 && isInWindow &&self.window == keyWindow) {
+        return YES;
+    }else
+    {
+        return NO;
+    }
+
+}
 @end

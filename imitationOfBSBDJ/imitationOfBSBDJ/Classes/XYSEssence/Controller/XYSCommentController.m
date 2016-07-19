@@ -18,6 +18,8 @@
 @interface XYSCommentController ()<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *keyboardConstraint;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+/** 总评论数*/
+@property (assign,nonatomic)NSInteger total;
 /** 热门评论*/
 @property (strong,nonatomic)NSMutableArray *listOfHotComment;
 /** 普通评论*/
@@ -112,7 +114,7 @@ static NSString *commentCellId = @"commentCell";
                                                                 refreshingAction:@selector(loadNewComment)];
     [self.tableView.mj_header beginRefreshing];
     
-    self.tableView.mj_footer = [MJRefreshAutoFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreComment)];
+    self.tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreComment)];
 }
 /**
  *  获取网络数据
@@ -129,15 +131,24 @@ static NSString *commentCellId = @"commentCell";
     parameters[@"hot"] = @"1";
     
     [self.manger GET:@"http://api.budejie.com/api/api_open.php" parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        self.listOfHotComment = [XYSTopCommentModel mj_objectArrayWithKeyValuesArray:responseObject[@"hot"]];
+        //防止服务器没有评论数据返回一个空数组而崩溃
+        self.total = [responseObject[@"total"] integerValue];
+        if ([responseObject isKindOfClass:[NSArray class]]) {
+            [self.tableView reloadData];
+            [self.tableView.mj_header endRefreshing];
+            return ;
+        }else{
+            self.listOfHotComment = [XYSTopCommentModel mj_objectArrayWithKeyValuesArray:responseObject[@"hot"]];
+            
+            self.listOfComment = [XYSTopCommentModel mj_objectArrayWithKeyValuesArray:responseObject[@"data"]];
+            
+            XYSTopCommentModel *lastmodel = [self.listOfComment lastObject];
+            self.lastId =lastmodel.commentId;
+            
+            [self.tableView reloadData];
+            [self.tableView.mj_header endRefreshing];
+        }
         
-        self.listOfComment = [XYSTopCommentModel mj_objectArrayWithKeyValuesArray:responseObject[@"data"]];
-        
-        XYSTopCommentModel *lastmodel = [self.listOfComment lastObject];
-        self.lastId =lastmodel.commentId;
-        
-        [self.tableView reloadData];
-        [self.tableView.mj_header endRefreshing];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         [self.tableView.mj_header endRefreshing];
 
@@ -158,15 +169,27 @@ static NSString *commentCellId = @"commentCell";
     parameters[@"lastcid"] = self.lastId;
     
     [self.manger GET:@"http://api.budejie.com/api/api_open.php" parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        [self.tableView.mj_footer endRefreshing];
-
-        NSArray *commentArray = [XYSTopCommentModel mj_objectArrayWithKeyValuesArray:responseObject[@"data"]];
-        [self.listOfComment addObjectsFromArray:commentArray];
+        //防止服务器没有评论数据返回一个空数组而崩溃
+        if ([responseObject isKindOfClass:[NSArray class]]) {
+            [self.tableView reloadData];
+            [self.tableView.mj_footer endRefreshingWithNoMoreData];
+            return ;
+        }else{
+            NSArray *commentArray = [XYSTopCommentModel mj_objectArrayWithKeyValuesArray:responseObject[@"data"]];
+            [self.listOfComment addObjectsFromArray:commentArray];
+            //判断是否还有新数据
+            if (self.listOfComment.count >=self.total) {
+                [self.tableView.mj_footer endRefreshingWithNoMoreData];
+            }else
+            {
+                XYSTopCommentModel *lastmodel = [self.listOfComment lastObject];
+                self.lastId =lastmodel.commentId;
+                
+                [self.tableView reloadData];
+                [self.tableView.mj_footer endRefreshing];
+            }
+        }
         
-        XYSTopCommentModel *lastmodel = [self.listOfComment lastObject];
-        self.lastId =lastmodel.commentId;
-        
-        [self.tableView reloadData];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         [self.tableView.mj_footer endRefreshing];
         

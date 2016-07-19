@@ -90,6 +90,9 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted" image="mainCellCommentClick"/>
+                                <connections>
+                                    <action selector="pushComment:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ykA-AD-kzG"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell-button-line" translatesAutoresizingMaskIntoConstraints="NO" id="KCE-Ok-xJZ" userLabel="分割线">
                                 <rect key="frame" x="80" y="15" width="1" height="29"/>

@@ -128,8 +128,8 @@ static NSString *rightCellId = @"rightRecommendUserCell";
         [leftRecommendModel.listOfRecommendUser addObjectsFromArray:recommendUsers];
         //总页数
         leftRecommendModel.total_page =[responseObject[@"total_page"]integerValue];
-        //"totla"什么鬼= =！，总的推荐用户数
-        leftRecommendModel.totalRecommendUser = [responseObject[@"totla"]integerValue];
+        //总的推荐用户数
+        leftRecommendModel.totalRecommendUser = [responseObject[@"total"]integerValue];
         
         [self.rightUserTableView reloadData];
         [self checkFooter];

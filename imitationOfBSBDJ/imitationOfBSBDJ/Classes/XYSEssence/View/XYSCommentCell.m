@@ -54,8 +54,8 @@
 
 -(void)setFrame:(CGRect)frame
 {
-    frame.origin.x = XYSTopicCellMargin;
-    frame.size.width -=2 * frame.origin.x;
+    //frame.origin.x = XYSTopicCellMargin;
+    //frame.size.width -=2 * frame.origin.x;
     [super setFrame:frame];
 }
 @end

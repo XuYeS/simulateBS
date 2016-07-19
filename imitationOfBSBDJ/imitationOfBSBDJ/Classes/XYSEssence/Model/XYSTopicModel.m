@@ -36,7 +36,7 @@
 {
     if (!_topicCellHeight) {
         
-        CGSize maxSize = CGSizeMake([UIScreen mainScreen].bounds.size.width - 4*XYSTopicCellMargin, MAXFLOAT);
+        CGSize maxSize = CGSizeMake([UIScreen mainScreen].bounds.size.width - 2*XYSTopicCellMargin, MAXFLOAT);
         
         //attributes
         NSMutableDictionary *attr = [NSMutableDictionary dictionary];

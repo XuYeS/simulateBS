@@ -77,8 +77,8 @@
 }
 -(void)setFrame:(CGRect)frame
 {
-    frame.origin.x = XYSTopicCellMargin;
-    frame.size.width -=2*frame.origin.x ;
+//    frame.origin.x = XYSTopicCellMargin;
+//    frame.size.width -=2*frame.origin.x ;
     frame.size.height = self.topicModel.topicCellHeight - XYSTopicCellMargin;
     frame.origin.y += XYSTopicCellMargin;
     [super setFrame:frame];
@@ -152,6 +152,12 @@
         placeholder = [NSString stringWithFormat:@"%zd", count];
     }
     [button setTitle:placeholder forState:UIControlStateNormal];
+}
+- (IBAction)pushComment:(id)sender {
+    
+    if (self.commentTap) {
+        self.commentTap();
+    }
 }
 
 @end

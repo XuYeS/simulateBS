@@ -26,3 +26,6 @@ CGFloat const XYSClipPictureHeight = 220;
 /** XMGUser模型-性别属性值 */
 NSString * const XYSUserSexMale = @"m";
 NSString * const XYSUserSexFemale = @"f";
+
+
+NSString * const XYSTabBarDidSelectNotification = @"XYSTabBarDidSelectNotification";

@@ -62,6 +62,7 @@
 		B7DEBA131D256ADC007B58B3 /* XYSRightRecommendUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEBA121D256ADC007B58B3 /* XYSRightRecommendUserModel.m */; settings = {ASSET_TAGS = (); }; };
 		B7E70C241D37D4C900815896 /* XYSTopicVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E70C231D37D4C900815896 /* XYSTopicVideoView.m */; settings = {ASSET_TAGS = (); }; };
 		B7E70C2C1D37D88800815896 /* XYSTopicVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7E70C2B1D37D88800815896 /* XYSTopicVideoView.xib */; settings = {ASSET_TAGS = (); }; };
+		B7FF27871D3DC885008B6722 /* XYSRollBackWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = B7FF27861D3DC885008B6722 /* XYSRollBackWindow.m */; settings = {ASSET_TAGS = (); }; };
 		D7B58BEBCCBCF23C3768049D /* libPods-imitationOfBSBDJ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DD1CA3322CF269599AEF96 /* libPods-imitationOfBSBDJ.a */; };
 /* End PBXBuildFile section */
 
@@ -184,6 +185,8 @@
 		B7E70C221D37D4C900815896 /* XYSTopicVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSTopicVideoView.h; sourceTree = "<group>"; };
 		B7E70C231D37D4C900815896 /* XYSTopicVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSTopicVideoView.m; sourceTree = "<group>"; };
 		B7E70C2B1D37D88800815896 /* XYSTopicVideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYSTopicVideoView.xib; sourceTree = "<group>"; };
+		B7FF27851D3DC885008B6722 /* XYSRollBackWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSRollBackWindow.h; sourceTree = "<group>"; };
+		B7FF27861D3DC885008B6722 /* XYSRollBackWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSRollBackWindow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -368,6 +371,8 @@
 				B72C36761D365F51002D3DC3 /* XYSPublishView.h */,
 				B72C36771D365F51002D3DC3 /* XYSPublishView.m */,
 				B72C367B1D365FFB002D3DC3 /* XYSPublishView.xib */,
+				B7FF27851D3DC885008B6722 /* XYSRollBackWindow.h */,
+				B7FF27861D3DC885008B6722 /* XYSRollBackWindow.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -792,6 +797,7 @@
 				B70312731D2963FE00D09EE9 /* XYSTextField.m in Sources */,
 				B77507EF1D200808009BA9F2 /* XYSNewViewController.m in Sources */,
 				B73542001D3B651600A3023B /* XYSCommentController.m in Sources */,
+				B7FF27871D3DC885008B6722 /* XYSRollBackWindow.m in Sources */,
 				B76818461D32713B0044B7E3 /* XYSShowPictureController.m in Sources */,
 				B7E70C241D37D4C900815896 /* XYSTopicVideoView.m in Sources */,
 				B77507E61D200808009BA9F2 /* UIView+XYSExtension.m in Sources */,

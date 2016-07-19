@@ -16,4 +16,6 @@
 @property (assign, nonatomic) CGFloat xys_centerX;
 @property (assign, nonatomic) CGFloat xys_centerY;
 @property (assign, nonatomic) CGSize xys_size;
+
+-(BOOL)isOnCurrentScreen;
 @end

@@ -13,6 +13,7 @@
 #import "XYSNewViewController.h"
 #import "XYSFriendTrendsViewController.h"
 #import "XYSMeViewController.h"
+#import <MJRefresh.h>
 @implementation XYSTabBarController
 
 +(void)initialize
@@ -59,4 +60,5 @@
     [self addChildViewController:[[XYSNavigationController alloc]initWithRootViewController:vc]];
     
 }
+
 @end

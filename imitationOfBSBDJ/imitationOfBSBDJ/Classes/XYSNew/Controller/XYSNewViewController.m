@@ -7,7 +7,7 @@
 //
 
 #import "XYSNewViewController.h"
-
+#import "XYSRollBackWindow.h"
 @interface XYSNewViewController ()
 
 @end
@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [XYSRollBackWindow show];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = XYSBackGroundColor ;
     self.navigationItem.titleView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"MainTitle"]];

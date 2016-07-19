@@ -10,6 +10,7 @@
 #import "XYSTopicModel.h"
 #import "XYSTopicCell.h"
 #import "XYSCommentController.h"
+#import "XYSNewViewController.h"
 #import <AFNetworking.h>
 #import <MJExtension.h>
 #import <SVProgressHUD.h>
@@ -25,6 +26,9 @@
 @property (copy,nonatomic) NSString *maxtime;
 /** 当前页码 */
 @property (nonatomic, assign) NSInteger page;
+
+/**  a参数 */
+@property (copy,nonatomic)NSString *a;
 
 @end
 
@@ -56,7 +60,13 @@ static NSString * cellId = @"topicCell";
     self.title = @"段子";
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self setUpTableView];
+    
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(tabBarClick) name:XYSTabBarDidSelectNotification object:nil];
 
+}
+-(void)tabBarClick
+{
+    [self.tableView.mj_header beginRefreshing];
 }
 -(void)setUpTableView
 {
@@ -66,12 +76,22 @@ static NSString * cellId = @"topicCell";
     [self.tableView.mj_header beginRefreshing];
     self.tableView.mj_footer = [MJRefreshBackStateFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreTopics)];
 }
-
+-(NSString *)a
+{
+    if ([self.parentViewController isKindOfClass:[XYSNewViewController class]]) {
+        return @"newlist";
+    }else{
+        return @"list";
+    }
+}
+/**
+ *  下拉刷新
+ */
 -(void)refreshTopics
 {
     [self endRefreshAll];
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
-    parameters[@"a"] = @"list";
+    parameters[@"a"] = self.a;
     parameters[@"c"] = @"data";
     parameters[@"type"] = @(self.type);
     self.parameters = parameters;
@@ -96,12 +116,15 @@ static NSString * cellId = @"topicCell";
         [self endRefreshAll];
     }];
 }
+/**
+ *  上拉刷新
+ */
 -(void)loadMoreTopics
 {
     [self endRefreshAll];
     //参数
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
-    parameters[@"a"] = @"list";
+    parameters[@"a"] = self.a;
     parameters[@"c"] = @"data";
     parameters[@"type"] = @(self.type);
     NSInteger page = self.page++;
@@ -132,12 +155,27 @@ static NSString * cellId = @"topicCell";
         [self endRefreshAll];
     }];
 }
-
+/**
+ *  结束上下拉
+ */
 - (void)endRefreshAll
 {
-    //结束上下拉
     [self.tableView.mj_header endRefreshing];
     [self.tableView.mj_footer endRefreshing];
+}
+/**
+ *  显示评论界面
+ */
+-(void)showComment:(NSIndexPath *)indexPath
+{
+    XYSCommentController *cc = [[XYSCommentController alloc]init];
+    cc.topicModel = self.listOfTopicModel[indexPath.row];
+    [self.navigationController pushViewController:cc animated:YES];
+}
+
+-(void)dealloc
+{
+    [[NSNotificationCenter defaultCenter]removeObserver:self];
 }
 #pragma mark - Table view data source
 
@@ -149,7 +187,9 @@ static NSString * cellId = @"topicCell";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     XYSTopicCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
     cell.topicModel = self.listOfTopicModel[indexPath.row];
-
+    cell.commentTap = ^{
+        [self showComment:indexPath];
+    };
     return cell;
 }
 
@@ -161,9 +201,7 @@ static NSString * cellId = @"topicCell";
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    XYSCommentController *cc = [[XYSCommentController alloc]init];
-    cc.topicModel = self.listOfTopicModel[indexPath.row];
-    [self.navigationController pushViewController:cc animated:YES];
+    [self showComment:indexPath];
 }
 
 @end

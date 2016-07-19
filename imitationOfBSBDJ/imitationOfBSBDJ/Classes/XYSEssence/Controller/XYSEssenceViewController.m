@@ -9,7 +9,7 @@
 #import "XYSEssenceViewController.h"
 #import "XYSRecommendTableViewController.h"
 #import "XYSTopicController.h"
-
+#import "XYSRollBackWindow.h"
 @interface XYSEssenceViewController () <UIScrollViewDelegate>
 /** 红色的下标*/
 @property (weak,nonatomic)UIView* redMarkView;
@@ -28,12 +28,12 @@
 #pragma mark -viewDidLoad
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [XYSRollBackWindow show];
     //初始化顺序很重要，setUpTagView要在SetUpBackgroundContentView之后，不然会数组越界
     [self setUpNavigation];
     [self setupChildVCs];
     [self SetUpBackgroundContentView];
     [self setUpTagView];
-
     
 }
 /**
