@@ -49,11 +49,14 @@
 @property (nonatomic,assign)NSInteger voicetime ;
 /**播放次数 */
 @property (nonatomic,assign)NSInteger playfcount ;
+/**声音地址 */
+@property (nonatomic,copy)NSString  *voiceuri;
 
 //--------视频
 /**视频时间 */
 @property (nonatomic,assign)NSInteger videotime ;
-
+/**视频地址 */
+@property (nonatomic,copy)NSString  *videouri;
 //--------辅助属性
 /**内容的高度 */
 @property (nonatomic,assign,readonly)CGFloat topicCellHeight ;

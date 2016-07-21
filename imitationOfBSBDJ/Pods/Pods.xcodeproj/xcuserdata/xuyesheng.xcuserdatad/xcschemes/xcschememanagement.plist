@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>DOUAudioStreamer.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MJExtension.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,12 +52,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>10E65AC0ED6A04D62DC183A27BD9D76A</key>
+		<key>491216281FA57B4A426FE62D2A57D4BE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>70BC44266C6FFE30D2C57129458E070B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>896167420ACA75FC23F80A0A1910443D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8DA173C2A1703FD74FE9EF47094C067E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,17 +87,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A6CC5CDC5383BA2D5607227FB9C65865</key>
+		<key>BFA587E424D6C1AC2E3428997AA87F46</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A9A1478D2C3D907BC293F002F5CC25FE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C268B6F8265261069C7887C19586EB61</key>
+		<key>D26A6D000EA63A2C3BBCF016605D3D4E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

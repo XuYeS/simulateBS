@@ -21,6 +21,14 @@
 		B72C367C1D365FFB002D3DC3 /* XYSPublishView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B72C367B1D365FFB002D3DC3 /* XYSPublishView.xib */; settings = {ASSET_TAGS = (); }; };
 		B72CFCBE1D3A764E00C4889C /* XYSTopCommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B72CFCBD1D3A764E00C4889C /* XYSTopCommentModel.m */; settings = {ASSET_TAGS = (); }; };
 		B72CFCC11D3A771500C4889C /* XYSUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B72CFCC01D3A771500C4889C /* XYSUser.m */; settings = {ASSET_TAGS = (); }; };
+		B7318F1A1D3F5D5A00B66113 /* XYSMeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7318F191D3F5D5A00B66113 /* XYSMeCell.m */; settings = {ASSET_TAGS = (); }; };
+		B7318F1D1D3F615100B66113 /* XYSMeExtensionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B7318F1C1D3F615100B66113 /* XYSMeExtensionView.m */; settings = {ASSET_TAGS = (); }; };
+		B7318F231D3F63C600B66113 /* XYSMeExtensionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B7318F221D3F63C600B66113 /* XYSMeExtensionModel.m */; settings = {ASSET_TAGS = (); }; };
+		B7318F261D3F666000B66113 /* XYSMeExtensionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B7318F251D3F666000B66113 /* XYSMeExtensionButton.m */; settings = {ASSET_TAGS = (); }; };
+		B7318F2A1D3F8E1100B66113 /* XYSPlayVoiceController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7318F281D3F8E1100B66113 /* XYSPlayVoiceController.m */; settings = {ASSET_TAGS = (); }; };
+		B7318F2B1D3F8E1100B66113 /* XYSPlayVoiceController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7318F291D3F8E1100B66113 /* XYSPlayVoiceController.xib */; settings = {ASSET_TAGS = (); }; };
+		B7318F2E1D40BB6700B66113 /* XYSPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7318F2D1D40BB6700B66113 /* XYSPostViewController.m */; settings = {ASSET_TAGS = (); }; };
+		B7318F311D40C6B600B66113 /* XYSPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = B7318F301D40C6B600B66113 /* XYSPlaceholderTextView.m */; settings = {ASSET_TAGS = (); }; };
 		B73542001D3B651600A3023B /* XYSCommentController.m in Sources */ = {isa = PBXBuildFile; fileRef = B73541FE1D3B651600A3023B /* XYSCommentController.m */; settings = {ASSET_TAGS = (); }; };
 		B73542011D3B651600A3023B /* XYSCommentController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B73541FF1D3B651600A3023B /* XYSCommentController.xib */; settings = {ASSET_TAGS = (); }; };
 		B73542061D3B774100A3023B /* XYSCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B73542041D3B774100A3023B /* XYSCommentCell.xib */; settings = {ASSET_TAGS = (); }; };
@@ -111,6 +119,21 @@
 		B72CFCBD1D3A764E00C4889C /* XYSTopCommentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSTopCommentModel.m; sourceTree = "<group>"; };
 		B72CFCBF1D3A771500C4889C /* XYSUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSUser.h; sourceTree = "<group>"; };
 		B72CFCC01D3A771500C4889C /* XYSUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSUser.m; sourceTree = "<group>"; };
+		B7318F181D3F5D5A00B66113 /* XYSMeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSMeCell.h; sourceTree = "<group>"; };
+		B7318F191D3F5D5A00B66113 /* XYSMeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSMeCell.m; sourceTree = "<group>"; };
+		B7318F1B1D3F615100B66113 /* XYSMeExtensionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSMeExtensionView.h; sourceTree = "<group>"; };
+		B7318F1C1D3F615100B66113 /* XYSMeExtensionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSMeExtensionView.m; sourceTree = "<group>"; };
+		B7318F211D3F63C600B66113 /* XYSMeExtensionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSMeExtensionModel.h; sourceTree = "<group>"; };
+		B7318F221D3F63C600B66113 /* XYSMeExtensionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSMeExtensionModel.m; sourceTree = "<group>"; };
+		B7318F241D3F666000B66113 /* XYSMeExtensionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSMeExtensionButton.h; sourceTree = "<group>"; };
+		B7318F251D3F666000B66113 /* XYSMeExtensionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSMeExtensionButton.m; sourceTree = "<group>"; };
+		B7318F271D3F8E1100B66113 /* XYSPlayVoiceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSPlayVoiceController.h; sourceTree = "<group>"; };
+		B7318F281D3F8E1100B66113 /* XYSPlayVoiceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSPlayVoiceController.m; sourceTree = "<group>"; };
+		B7318F291D3F8E1100B66113 /* XYSPlayVoiceController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYSPlayVoiceController.xib; sourceTree = "<group>"; };
+		B7318F2C1D40BB6700B66113 /* XYSPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSPostViewController.h; sourceTree = "<group>"; };
+		B7318F2D1D40BB6700B66113 /* XYSPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSPostViewController.m; sourceTree = "<group>"; };
+		B7318F2F1D40C6B600B66113 /* XYSPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSPlaceholderTextView.h; sourceTree = "<group>"; };
+		B7318F301D40C6B600B66113 /* XYSPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSPlaceholderTextView.m; sourceTree = "<group>"; };
 		B73541FD1D3B651600A3023B /* XYSCommentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSCommentController.h; sourceTree = "<group>"; };
 		B73541FE1D3B651600A3023B /* XYSCommentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSCommentController.m; sourceTree = "<group>"; };
 		B73541FF1D3B651600A3023B /* XYSCommentController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYSCommentController.xib; sourceTree = "<group>"; };
@@ -339,6 +362,8 @@
 				B703125F1D2906DA00D09EE9 /* XYSLoginRegisterController.h */,
 				B70312601D2906DA00D09EE9 /* XYSLoginRegisterController.m */,
 				B703126F1D295DA500D09EE9 /* XYSLoginRegisterController.xib */,
+				B7318F2C1D40BB6700B66113 /* XYSPostViewController.h */,
+				B7318F2D1D40BB6700B66113 /* XYSPostViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -373,6 +398,8 @@
 				B72C367B1D365FFB002D3DC3 /* XYSPublishView.xib */,
 				B7FF27851D3DC885008B6722 /* XYSRollBackWindow.h */,
 				B7FF27861D3DC885008B6722 /* XYSRollBackWindow.m */,
+				B7318F2F1D40C6B600B66113 /* XYSPlaceholderTextView.h */,
+				B7318F301D40C6B600B66113 /* XYSPlaceholderTextView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -415,6 +442,9 @@
 				B73541FD1D3B651600A3023B /* XYSCommentController.h */,
 				B73541FE1D3B651600A3023B /* XYSCommentController.m */,
 				B73541FF1D3B651600A3023B /* XYSCommentController.xib */,
+				B7318F271D3F8E1100B66113 /* XYSPlayVoiceController.h */,
+				B7318F281D3F8E1100B66113 /* XYSPlayVoiceController.m */,
+				B7318F291D3F8E1100B66113 /* XYSPlayVoiceController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -528,6 +558,8 @@
 		B77507DE1D200808009BA9F2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B7318F211D3F63C600B66113 /* XYSMeExtensionModel.h */,
+				B7318F221D3F63C600B66113 /* XYSMeExtensionModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -535,6 +567,12 @@
 		B77507DF1D200808009BA9F2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B7318F181D3F5D5A00B66113 /* XYSMeCell.h */,
+				B7318F191D3F5D5A00B66113 /* XYSMeCell.m */,
+				B7318F1B1D3F615100B66113 /* XYSMeExtensionView.h */,
+				B7318F1C1D3F615100B66113 /* XYSMeExtensionView.m */,
+				B7318F241D3F666000B66113 /* XYSMeExtensionButton.h */,
+				B7318F251D3F666000B66113 /* XYSMeExtensionButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -643,6 +681,7 @@
 				TargetAttributes = {
 					B77507831D2007D6009BA9F2 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = XD4Q3VGUNK;
 					};
 					B775079C1D2007D6009BA9F2 = {
 						CreatedOnToolsVersion = 7.0;
@@ -683,6 +722,7 @@
 				B7E70C2C1D37D88800815896 /* XYSTopicVideoView.xib in Resources */,
 				B73542061D3B774100A3023B /* XYSCommentCell.xib in Resources */,
 				B76818421D32460A0044B7E3 /* XYSTopicPictureView.xib in Resources */,
+				B7318F2B1D3F8E1100B66113 /* XYSPlayVoiceController.xib in Resources */,
 				B7BDDD401D2F8D530078714A /* XYSTopicCell.xib in Resources */,
 				B7D856401D378A7E009EAF7E /* XYSTopicVoiceView.xib in Resources */,
 				B77507941D2007D6009BA9F2 /* Assets.xcassets in Resources */,
@@ -769,6 +809,7 @@
 			files = (
 				B7DEBA0B1D25354E007B58B3 /* XYSLeftRecommendModel.m in Sources */,
 				B77507E81D200808009BA9F2 /* XYSTabBarController.m in Sources */,
+				B7318F261D3F666000B66113 /* XYSMeExtensionButton.m in Sources */,
 				B77507E91D200808009BA9F2 /* XYSTabBar.m in Sources */,
 				B7D8563E1D378A72009EAF7E /* XYSTopicVoiceView.m in Sources */,
 				B7DEBA131D256ADC007B58B3 /* XYSRightRecommendUserModel.m in Sources */,
@@ -780,6 +821,7 @@
 				B73542091D3B779F00A3023B /* XYSCommentCell.m in Sources */,
 				B77507EE1D200808009BA9F2 /* XYSMeViewController.m in Sources */,
 				B77507E71D200808009BA9F2 /* XYSNavigationController.m in Sources */,
+				B7318F1D1D3F615100B66113 /* XYSMeExtensionView.m in Sources */,
 				B76818401D3245E30044B7E3 /* XYSTopicPictureView.m in Sources */,
 				B703125A1D28F4B000D09EE9 /* XYSRecommendTagModel.m in Sources */,
 				B72CFCBE1D3A764E00C4889C /* XYSTopCommentModel.m in Sources */,
@@ -794,8 +836,11 @@
 				B7DEBA0F1D2567FF007B58B3 /* XYSRightRecommendUserCell.m in Sources */,
 				B70312691D29448300D09EE9 /* XYSVerticalButton.m in Sources */,
 				B77507F51D200F77009BA9F2 /* UIBarButtonItem+XYSExtension.m in Sources */,
+				B7318F2A1D3F8E1100B66113 /* XYSPlayVoiceController.m in Sources */,
 				B70312731D2963FE00D09EE9 /* XYSTextField.m in Sources */,
+				B7318F231D3F63C600B66113 /* XYSMeExtensionModel.m in Sources */,
 				B77507EF1D200808009BA9F2 /* XYSNewViewController.m in Sources */,
+				B7318F311D40C6B600B66113 /* XYSPlaceholderTextView.m in Sources */,
 				B73542001D3B651600A3023B /* XYSCommentController.m in Sources */,
 				B7FF27871D3DC885008B6722 /* XYSRollBackWindow.m in Sources */,
 				B76818461D32713B0044B7E3 /* XYSShowPictureController.m in Sources */,
@@ -805,6 +850,8 @@
 				B768183D1D323DC20044B7E3 /* XYSUIConst.m in Sources */,
 				B76818311D3231C60044B7E3 /* NSDate+XYSExtension.m in Sources */,
 				B72CFCC11D3A771500C4889C /* XYSUser.m in Sources */,
+				B7318F1A1D3F5D5A00B66113 /* XYSMeCell.m in Sources */,
+				B7318F2E1D40BB6700B66113 /* XYSPostViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -937,12 +984,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = imitationOfBSBDJ/Classes/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = imitationOfBSBDJ/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = S.imitationOfBSBDJ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -952,12 +1002,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = imitationOfBSBDJ/Classes/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = imitationOfBSBDJ/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = S.imitationOfBSBDJ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

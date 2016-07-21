@@ -9,6 +9,7 @@
 #import "XYSTopicVoiceView.h"
 #import "XYSShowPictureController.h"
 #import "XYSTopicModel.h"
+#import "XYSPlayVoiceController.h"
 #import <UIImageView+WebCache.h>
 @interface XYSTopicVoiceView()
 @property (weak, nonatomic) IBOutlet UILabel *seenNumlabel;
@@ -49,5 +50,6 @@
     XYSShowPictureController *spc = [[XYSShowPictureController alloc]init];
     spc.topicModel = self.topicModel;
     [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:spc animated:YES completion:nil];
+
 }
 @end

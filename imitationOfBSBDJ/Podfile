@@ -10,6 +10,7 @@ target 'imitationOfBSBDJ' do
     pod "MJRefresh"
     pod "DACircularProgress"
     pod "pop"
+    pod "DOUAudioStreamer"
 
 end
 

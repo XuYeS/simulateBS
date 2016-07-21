@@ -7,21 +7,28 @@
 //
 
 #import "XYSPublishView.h"
-#import <POPSpringAnimation.h>
 #import "XYSVerticalButton.h"
+#import "XYSNavigationController.h"
+#import "XYSPostViewController.h"
+#import <POPSpringAnimation.h>
+@interface XYSPublishView()
+@property (copy,nonatomic)void (^CompletionBlock)(void);
+
+@end
 @implementation XYSPublishView
 
-static UIWindow * window_;
+static UIWindow * publishWindow_;
 
 +(instancetype)showPublishView
 {
     XYSPublishView *view = [[[NSBundle mainBundle]loadNibNamed:NSStringFromClass(self) owner:nil options:nil] lastObject];
-    window_ = [[UIWindow alloc]init];
-    window_.backgroundColor = [UIColor clearColor];
-    window_.windowLevel = UIWindowLevelAlert;
-    view.frame = window_.bounds;
-    [window_ addSubview:view];
-    window_.hidden = NO;
+    publishWindow_ = [[UIWindow alloc]init];
+    publishWindow_.backgroundColor = [[UIColor whiteColor]colorWithAlphaComponent:0.6];
+    publishWindow_.windowLevel = UIWindowLevelAlert;
+    publishWindow_.frame = [UIScreen mainScreen].bounds;
+    view.frame = publishWindow_.bounds;
+    [publishWindow_ addSubview:view];
+    publishWindow_.hidden = NO;
     
     return view;
 }
@@ -42,7 +49,7 @@ static UIWindow * window_;
     
     for (int i = 0; i<btnImageName.count; i++) {
         XYSVerticalButton *btn = [XYSVerticalButton buttonWithType:UIButtonTypeCustom];
-        
+        [btn addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
         
         [btn setImage:[UIImage imageNamed:btnImageName[i]] forState:UIControlStateNormal];
         [btn setTitle:btnTitleName[i] forState:UIControlStateNormal];
@@ -92,8 +99,8 @@ static UIWindow * window_;
     
    
 }
-- (IBAction)back{
-    
+-(void)cancelWithCompletionBlock:(void(^)(void))CompletionBlock
+{
     for (int i = 1; i<self.subviews.count; i++) {
         UIView *subView = self.subviews[i];
         POPSpringAnimation *animation = [POPSpringAnimation animationWithPropertyNamed:kPOPViewCenter];
@@ -103,13 +110,27 @@ static UIWindow * window_;
         
         if (i == self.subviews.count - 1) {
             [animation setCompletionBlock:^(POPAnimation *anima, BOOL finished) {
-                window_ = Nil;
+                if (CompletionBlock) {
+                    CompletionBlock();
+                }
+                publishWindow_ = Nil;
             }];
         }
     }
-    
-    
-    
+}
+//监听按钮点
+-(void)buttonClick:(UIButton*)btn
+{
+    if ([btn.titleLabel.text isEqualToString:@"发段子"]) {
+       [self cancelWithCompletionBlock:^{
+           XYSNavigationController *nc = [[XYSNavigationController alloc]initWithRootViewController:[[XYSPostViewController alloc] init]];
+           [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:nc animated:YES completion:nil];
+       }];
+    }
+}
+
+- (IBAction)back{
+    [self cancelWithCompletionBlock:nil];
 }
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {

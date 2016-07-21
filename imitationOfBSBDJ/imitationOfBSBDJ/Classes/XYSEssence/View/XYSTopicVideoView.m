@@ -9,6 +9,7 @@
 #import "XYSTopicVideoView.h"
 #import "XYSTopicModel.h"
 #import "XYSShowPictureController.h"
+#import "XYSPlayVoiceController.h"
 #import <UIImageView+WebCache.h>
 @interface XYSTopicVideoView()
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;

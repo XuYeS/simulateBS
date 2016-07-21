@@ -8,6 +8,9 @@
 
 #import "XYSTabBar.h"
 #import "XYSPublishView.h"
+#import "XYSPostViewController.h"
+#import "XYSTabBarController.h"
+#import "XYSNavigationController.h"
 @interface XYSTabBar()
 /**发布按钮*/
 @property (strong,nonatomic)UIButton *publishButton;
@@ -34,7 +37,12 @@
 
 -(void)tapPublish
 {
-    [XYSPublishView showPublishView];
+    //[XYSPublishView showPublishView];
+    XYSPostViewController *pvc = [[XYSPostViewController alloc]init];
+    XYSNavigationController *nc = [[XYSNavigationController alloc]initWithRootViewController:pvc];
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:nc animated:YES completion:nil];
+
+
 }
 
 -(void)layoutSubviews

@@ -12,7 +12,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zV5-gU-XIG">
-                    <rect key="frame" x="80" y="546" width="440" height="44"/>
+                    <rect key="frame" x="80" y="526" width="440" height="44"/>
                     <animations/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
@@ -32,7 +32,7 @@
             <animations/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.89989224137931034" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="zV5-gU-XIG" secondAttribute="bottom" constant="10" id="4DO-zl-GpE"/>
+                <constraint firstAttribute="bottom" secondItem="zV5-gU-XIG" secondAttribute="bottom" constant="30" id="4DO-zl-GpE"/>
                 <constraint firstItem="zV5-gU-XIG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="80" id="B5V-iX-9Wn"/>
                 <constraint firstAttribute="trailing" secondItem="zV5-gU-XIG" secondAttribute="trailing" constant="80" id="wu8-X8-ncC"/>
             </constraints>

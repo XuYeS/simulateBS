@@ -15,5 +15,5 @@
 /**theme_name */
 @property (nonatomic,strong)NSString* theme_name ;
 /**关注人数 */
-@property (nonatomic,assign)NSString* sub_number ;
+@property (nonatomic,copy)NSString* sub_number ;
 @end

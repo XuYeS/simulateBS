@@ -66,7 +66,10 @@ static NSString * cellId = @"topicCell";
 }
 -(void)tabBarClick
 {
-    [self.tableView.mj_header beginRefreshing];
+    if(self.view.isOnCurrentScreen)
+    {
+        [self.tableView.mj_header beginRefreshing];
+    }
 }
 -(void)setUpTableView
 {
