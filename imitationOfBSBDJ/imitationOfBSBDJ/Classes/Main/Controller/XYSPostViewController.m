@@ -8,6 +8,7 @@
 
 #import "XYSPostViewController.h"
 #import "XYSPlaceholderTextView.h"
+#import "XYSLoginRegisterController.h"
 
 @interface XYSPostViewController ()
 @property (nonatomic,weak) XYSPlaceholderTextView *placeholderView;
@@ -58,7 +59,9 @@
 }
 -(void)post
 {
-    XYSLogFuc;
+    XYSLoginRegisterController *loginRigister = [[XYSLoginRegisterController alloc]init];
+    loginRigister.isLogin = YES;
+    [self.navigationController presentViewController:loginRigister animated:YES completion:nil];
 }
 
 @end

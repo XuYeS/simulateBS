@@ -102,6 +102,7 @@ static NSString *meCellId = @"meCell";
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     XYSLoginRegisterController *lrc = [[XYSLoginRegisterController alloc]init];
+    lrc.isLogin = YES;
     [self presentViewController:lrc animated:YES completion:nil];
 }
 
