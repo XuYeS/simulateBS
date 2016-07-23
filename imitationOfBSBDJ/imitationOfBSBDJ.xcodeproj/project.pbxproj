@@ -33,6 +33,9 @@
 		B73542011D3B651600A3023B /* XYSCommentController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B73541FF1D3B651600A3023B /* XYSCommentController.xib */; settings = {ASSET_TAGS = (); }; };
 		B73542061D3B774100A3023B /* XYSCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B73542041D3B774100A3023B /* XYSCommentCell.xib */; settings = {ASSET_TAGS = (); }; };
 		B73542091D3B779F00A3023B /* XYSCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B73542081D3B779F00A3023B /* XYSCommentCell.m */; settings = {ASSET_TAGS = (); }; };
+		B74A220F1D4353F100FBB07B /* XYSAddTagToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = B74A220E1D4353F100FBB07B /* XYSAddTagToolView.m */; settings = {ASSET_TAGS = (); }; };
+		B74A22111D4353FA00FBB07B /* XYSAddTagToolView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B74A22101D4353FA00FBB07B /* XYSAddTagToolView.xib */; settings = {ASSET_TAGS = (); }; };
+		B74A22141D435CBA00FBB07B /* XYSAddTagController.m in Sources */ = {isa = PBXBuildFile; fileRef = B74A22131D435CBA00FBB07B /* XYSAddTagController.m */; settings = {ASSET_TAGS = (); }; };
 		B756DAB81D2D2F6400B9960A /* XYSTopicController.m in Sources */ = {isa = PBXBuildFile; fileRef = B756DAB71D2D2F6400B9960A /* XYSTopicController.m */; settings = {ASSET_TAGS = (); }; };
 		B76818311D3231C60044B7E3 /* NSDate+XYSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B76818301D3231C60044B7E3 /* NSDate+XYSExtension.m */; settings = {ASSET_TAGS = (); }; };
 		B768183D1D323DC20044B7E3 /* XYSUIConst.m in Sources */ = {isa = PBXBuildFile; fileRef = B768183C1D323DC20044B7E3 /* XYSUIConst.m */; settings = {ASSET_TAGS = (); }; };
@@ -140,6 +143,11 @@
 		B73542041D3B774100A3023B /* XYSCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYSCommentCell.xib; sourceTree = "<group>"; };
 		B73542071D3B779F00A3023B /* XYSCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSCommentCell.h; sourceTree = "<group>"; };
 		B73542081D3B779F00A3023B /* XYSCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSCommentCell.m; sourceTree = "<group>"; };
+		B74A220D1D4353F100FBB07B /* XYSAddTagToolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSAddTagToolView.h; sourceTree = "<group>"; };
+		B74A220E1D4353F100FBB07B /* XYSAddTagToolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSAddTagToolView.m; sourceTree = "<group>"; };
+		B74A22101D4353FA00FBB07B /* XYSAddTagToolView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYSAddTagToolView.xib; sourceTree = "<group>"; };
+		B74A22121D435CBA00FBB07B /* XYSAddTagController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSAddTagController.h; sourceTree = "<group>"; };
+		B74A22131D435CBA00FBB07B /* XYSAddTagController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSAddTagController.m; sourceTree = "<group>"; };
 		B756DAB61D2D2F6400B9960A /* XYSTopicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSTopicController.h; sourceTree = "<group>"; };
 		B756DAB71D2D2F6400B9960A /* XYSTopicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSTopicController.m; sourceTree = "<group>"; };
 		B768182F1D3231C60044B7E3 /* NSDate+XYSExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+XYSExtension.h"; sourceTree = "<group>"; };
@@ -364,6 +372,8 @@
 				B703126F1D295DA500D09EE9 /* XYSLoginRegisterController.xib */,
 				B7318F2C1D40BB6700B66113 /* XYSPostViewController.h */,
 				B7318F2D1D40BB6700B66113 /* XYSPostViewController.m */,
+				B74A22121D435CBA00FBB07B /* XYSAddTagController.h */,
+				B74A22131D435CBA00FBB07B /* XYSAddTagController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -400,6 +410,9 @@
 				B7FF27861D3DC885008B6722 /* XYSRollBackWindow.m */,
 				B7318F2F1D40C6B600B66113 /* XYSPlaceholderTextView.h */,
 				B7318F301D40C6B600B66113 /* XYSPlaceholderTextView.m */,
+				B74A220D1D4353F100FBB07B /* XYSAddTagToolView.h */,
+				B74A220E1D4353F100FBB07B /* XYSAddTagToolView.m */,
+				B74A22101D4353FA00FBB07B /* XYSAddTagToolView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -735,6 +748,7 @@
 				B7DEB9FE1D250E08007B58B3 /* XYSRecommendController.xib in Resources */,
 				B73542011D3B651600A3023B /* XYSCommentController.xib in Resources */,
 				B703125E1D29022200D09EE9 /* XYSFriendTrendsViewController.xib in Resources */,
+				B74A22111D4353FA00FBB07B /* XYSAddTagToolView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -827,6 +841,7 @@
 				B72CFCBE1D3A764E00C4889C /* XYSTopCommentModel.m in Sources */,
 				B7BDDD391D2F85A80078714A /* XYSTopicModel.m in Sources */,
 				B71E92E91D34D9F500BBBF1C /* XYSCircularProgressView.m in Sources */,
+				B74A220F1D4353F100FBB07B /* XYSAddTagToolView.m in Sources */,
 				B70312621D2906DA00D09EE9 /* XYSLoginRegisterController.m in Sources */,
 				B70312521D28F09F00D09EE9 /* XYSRecommendTableViewController.m in Sources */,
 				B7DEB9FC1D250DEB007B58B3 /* XYSRecommendController.m in Sources */,
@@ -844,6 +859,7 @@
 				B73542001D3B651600A3023B /* XYSCommentController.m in Sources */,
 				B7FF27871D3DC885008B6722 /* XYSRollBackWindow.m in Sources */,
 				B76818461D32713B0044B7E3 /* XYSShowPictureController.m in Sources */,
+				B74A22141D435CBA00FBB07B /* XYSAddTagController.m in Sources */,
 				B7E70C241D37D4C900815896 /* XYSTopicVideoView.m in Sources */,
 				B77507E61D200808009BA9F2 /* UIView+XYSExtension.m in Sources */,
 				B77507ED1D200808009BA9F2 /* XYSFriendTrendsViewController.m in Sources */,

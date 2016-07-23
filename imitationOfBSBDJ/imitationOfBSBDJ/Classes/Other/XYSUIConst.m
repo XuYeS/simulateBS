@@ -27,5 +27,8 @@ CGFloat const XYSClipPictureHeight = 220;
 NSString * const XYSUserSexMale = @"m";
 NSString * const XYSUserSexFemale = @"f";
 
-
+/**tabbar 点击通知 */
 NSString * const XYSTabBarDidSelectNotification = @"XYSTabBarDidSelectNotification";
+
+/** 发表-标签-间距 */
+CGFloat const XYSTagMargin  = 5;

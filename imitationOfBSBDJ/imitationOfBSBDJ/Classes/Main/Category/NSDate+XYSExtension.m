@@ -59,8 +59,6 @@
 
 - (BOOL)isYesterday
 {
-    // 2014-12-31 23:59:59 -> 2014-12-31
-    // 2015-01-01 00:00:01 -> 2015-01-01
     
     // 日期格式化类
     NSDateFormatter *fmt = [[NSDateFormatter alloc] init];

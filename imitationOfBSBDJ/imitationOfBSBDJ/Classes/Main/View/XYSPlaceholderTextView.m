@@ -24,6 +24,7 @@
     }
     return _placeholderLabel;
 }
+
 #pragma mark - init
 -(instancetype)initWithFrame:(CGRect)frame
 {

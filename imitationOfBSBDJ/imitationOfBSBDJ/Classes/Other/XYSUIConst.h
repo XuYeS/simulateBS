@@ -36,7 +36,8 @@ UIKIT_EXTERN CGFloat const XYSClipPictureHeight ;
 /** XMGUser模型-性别属性值 */
 UIKIT_EXTERN NSString * const XYSUserSexMale;
 UIKIT_EXTERN NSString * const XYSUserSexFemale ;
-/**
- *  tabbar 点击通知
- */
+/**tabbar 点击通知 */
 UIKIT_EXTERN NSString * const XYSTabBarDidSelectNotification;
+
+/** 发表-标签-间距 */
+UIKIT_EXTERN CGFloat const XYSTagMargin ;
