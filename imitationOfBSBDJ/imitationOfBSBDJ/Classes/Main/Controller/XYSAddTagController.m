@@ -7,12 +7,14 @@
 //
 
 #import "XYSAddTagController.h"
-
-@interface XYSAddTagController ()
+#import "XYSTagTextField.h"
+#import "XYSTagButton.h"
+#import <SVProgressHUD.h>
+@interface XYSAddTagController ()<UITextFieldDelegate>
 /**背景*/
 @property (nonatomic,weak)UIView *contentView;
 /**输入框*/
-@property (nonatomic,weak)UITextField *textField;
+@property (nonatomic,weak)XYSTagTextField *textField;
 /**添加按钮*/
 @property (nonatomic,weak)UIButton *addButton;
 /**标签按钮*/
@@ -53,8 +55,6 @@
 }
 
 
-
-
 #pragma mark -init
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -62,12 +62,21 @@
     [self setupNavigation];
     [self setupContentView];
     [self setupTextField];
+    [self setupTags];
 
 }
+
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
     [self.textField becomeFirstResponder];
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    [self.textField resignFirstResponder];
 }
 -(void)setupNavigation
 {
@@ -88,14 +97,27 @@
 }
 -(void)setupTextField
 {
-    UITextField *textField = [[UITextField alloc]init];
-    textField.xys_width = screenWidth;
-    textField.xys_height = 25;
-    textField.placeholder = @"多个标签用逗号或者换行隔开";
-    textField.font = [UIFont systemFontOfSize:15];
+    __weak typeof(self) weakSelf = self;
+    
+    XYSTagTextField *textField = [[XYSTagTextField alloc]init];
+    textField.delegate = self;
+    //添加删除点击block
+    [textField setDeleteBlock:^{
+        XYSTagButton *lastBtn = [weakSelf.listOfTagBtns lastObject];
+        
+        [weakSelf cancelTag:lastBtn];
+    }];
+    
     [textField addTarget:self action:@selector(textEditingChange) forControlEvents:UIControlEventEditingChanged];
     [self.contentView addSubview:textField];
     self.textField = textField;
+}
+- (void)setupTags
+{
+    for (NSString *tag in self.inputTags) {
+        self.textField.text = tag;
+        [self addTag];
+    }
 }
 #pragma mark -主要方法
 /**
@@ -106,40 +128,26 @@
     if (self.textField.hasText) {
         self.addButton.hidden = NO;
         [self.addButton setTitle:[NSString stringWithFormat:@"添加标签：%@",self.textField.text] forState:UIControlStateNormal];
+        [self inputCommaAddTag];
     }else{
         self.addButton.hidden =YES;
     }
 }
 /**
- *  按下添加按钮标签
+ *  按下逗号添加标签
  */
--(void)addTag
+-(void)inputCommaAddTag
 {
+    NSUInteger textLength = self.textField.text.length;
+    NSString * lastCharacter = [self.textField.text substringFromIndex:textLength-1];
     
-    UIButton *tagBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [tagBtn setBackgroundColor:XYSTagColor];
-    tagBtn.clipsToBounds = YES;
-    tagBtn.layer.cornerRadius = 5;
- 
-    
-    [tagBtn setTitle:self.textField.text forState:UIControlStateNormal];
-    tagBtn.titleLabel.font = [UIFont systemFontOfSize:15];
-    tagBtn.imageEdgeInsets = UIEdgeInsetsMake(0, -2*XYSTagMargin, 0, 0);
-    [tagBtn setImage:[UIImage imageNamed:@"chose_tag_close_icon"] forState:UIControlStateNormal];
-    
-    tagBtn.contentEdgeInsets = UIEdgeInsetsMake(XYSTagMargin, 2*XYSTagMargin, XYSTagMargin, XYSTagMargin);
-    [tagBtn sizeToFit];
-    
-    [tagBtn addTarget:self action:@selector(cancelTag:) forControlEvents:UIControlEventTouchUpInside];
-    [self.contentView addSubview:tagBtn];
-    [self.listOfTagBtns addObject:tagBtn];
-    
-    [self cleanupTextField];
-    [self updateTagsFrame];
-    
-
+    if (([lastCharacter isEqualToString:@","]||[lastCharacter isEqualToString:@"，"]) && textLength >1) {
+        self.textField.text = [self.textField.text substringToIndex:textLength - 1];
+        [self addTag];
+    }
     
 }
+
 /**
  *  更新标签的布局
  */
@@ -147,12 +155,12 @@
 {
     //修改标签的frame
     for (int i = 0; i<self.listOfTagBtns.count;i++) {
-        UIButton *tagbtn = self.listOfTagBtns[i];
+        XYSTagButton *tagbtn = self.listOfTagBtns[i];
         if (i==0) {//第一个
             tagbtn.xys_x = 0;
             tagbtn.xys_y = 0;
         }else{//后面的几个
-            UIButton *lastBtn = self.listOfTagBtns[i-1];
+            XYSTagButton *lastBtn = self.listOfTagBtns[i-1];
             if ((lastBtn.xys_x + lastBtn.xys_width + XYSTagMargin + tagbtn.xys_width)>=self.contentView.xys_width) {//换行
                 tagbtn.xys_x = 0;
                 tagbtn.xys_y = CGRectGetMaxY(lastBtn.frame)+ XYSTagMargin;
@@ -163,7 +171,7 @@
         }
     }
     //修改textField和addButton
-    UIButton *lastBtn = [self.listOfTagBtns lastObject];
+    XYSTagButton *lastBtn = [self.listOfTagBtns lastObject];
     if ((lastBtn.xys_x + lastBtn.xys_width + XYSTagMargin +100)>=self.contentView.xys_width) {//换行
         self.textField.xys_x = 0;
         self.textField.xys_y = CGRectGetMaxY(lastBtn.frame)+ XYSTagMargin;
@@ -172,6 +180,29 @@
         self.textField.xys_y = lastBtn.xys_y;
     }
     self.addButton.xys_y = CGRectGetMaxY(self.textField.frame) + XYSTagMargin;
+}
+#pragma mark -buttonClick
+/**
+ *  按下添加按钮标签
+ */
+-(void)addTag
+{
+    if (self.listOfTagBtns.count == 5) {
+        [SVProgressHUD setMinimumDismissTimeInterval:1];
+        [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeGradient];
+        [SVProgressHUD showErrorWithStatus:@"最多添加5个标签"];
+        return;
+    }
+    
+    XYSTagButton *tagBtn = [XYSTagButton buttonWithType:UIButtonTypeCustom];
+    [tagBtn setTitle:self.textField.text forState:UIControlStateNormal];
+    [tagBtn addTarget:self action:@selector(cancelTag:) forControlEvents:UIControlEventTouchUpInside];
+    [self.contentView addSubview:tagBtn];
+    [self.listOfTagBtns addObject:tagBtn];
+    
+    [self cleanupTextField];
+    [self updateTagsFrame];
+    
 }
 /**
  *  清除一个标签
@@ -192,8 +223,23 @@
     self.textField.text = @"";
     self.addButton.hidden = YES;
 }
+/**
+ *  点击“完成”传递数据到上一个控制器
+ */
 -(void)addTagDone{
     
+    NSArray *tagTextArray = [self.listOfTagBtns valueForKey:@"currentTitle"];
+    !self.sendTagBlock ? : self.sendTagBlock(tagTextArray);
+    [self.navigationController popViewControllerAnimated:YES];
+    
+}
+#pragma mark -<UITextFieldDelegate>
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    if (self.textField.hasText) {
+         [self addTag];
+    }
+    return YES;
 }
 
 

@@ -70,7 +70,7 @@ static UIWindow * publishWindow_;
         anima.toValue = [NSValue valueWithCGRect:CGRectMake(btnX, btnY , btnW, btnH)];
         anima.springBounciness = 1;
         anima.springSpeed = 1;
-        anima.beginTime = CACurrentMediaTime() + 0.1*i ;
+        anima.beginTime = CACurrentMediaTime() + 0.05*i ;
         [btn pop_addAnimation:anima forKey:nil];
         
         [self addSubview:btn];
@@ -91,7 +91,7 @@ static UIWindow * publishWindow_;
     animation.toValue = [NSValue valueWithCGPoint:CGPointMake(sloganImageCenterX, sloganImageY)];
     animation.springBounciness = 1;
     animation.springSpeed = 1;
-    animation.beginTime = CACurrentMediaTime() + btnImageName.count*0.1;
+    animation.beginTime = CACurrentMediaTime() + btnImageName.count*0.05;
     [sloganImage pop_addAnimation:animation forKey:nil];
     [animation setCompletionBlock:^(POPAnimation *anima, BOOL finished) {
         self.userInteractionEnabled = YES;
@@ -105,7 +105,7 @@ static UIWindow * publishWindow_;
         UIView *subView = self.subviews[i];
         POPSpringAnimation *animation = [POPSpringAnimation animationWithPropertyNamed:kPOPViewCenter];
         animation.toValue = [NSValue valueWithCGPoint:CGPointMake(subView.xys_centerX,subView.xys_centerY +600 )];
-        animation.beginTime = CACurrentMediaTime() +i*0.1;
+        animation.beginTime = CACurrentMediaTime() +i*0.05;
         [subView pop_addAnimation:animation forKey:nil];
         
         if (i == self.subviews.count - 1) {

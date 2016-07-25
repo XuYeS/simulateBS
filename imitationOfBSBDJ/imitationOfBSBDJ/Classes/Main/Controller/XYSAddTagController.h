@@ -10,4 +10,9 @@
 
 @interface XYSAddTagController : UIViewController
 
+/** 完成后数据传递的block */
+@property (nonatomic,copy)void (^sendTagBlock) (NSArray *tagsArray);
+
+/**传入的标签 */
+@property (nonatomic,strong)NSMutableArray *inputTags ;
 @end

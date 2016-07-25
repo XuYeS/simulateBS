@@ -37,10 +37,10 @@
 
 -(void)tapPublish
 {
-    //[XYSPublishView showPublishView];
-    XYSPostViewController *pvc = [[XYSPostViewController alloc]init];
-    XYSNavigationController *nc = [[XYSNavigationController alloc]initWithRootViewController:pvc];
-    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:nc animated:YES completion:nil];
+    [XYSPublishView showPublishView];
+//    XYSPostViewController *pvc = [[XYSPostViewController alloc]init];
+//    XYSNavigationController *nc = [[XYSNavigationController alloc]initWithRootViewController:pvc];
+//    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:nc animated:YES completion:nil];
 
 
 }

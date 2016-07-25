@@ -30,6 +30,11 @@
     [super viewDidAppear:animated];
     [self.placeholderView becomeFirstResponder];
 }
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [self.placeholderView resignFirstResponder];
+}
 /**
  *  初始化导航控制器
  */

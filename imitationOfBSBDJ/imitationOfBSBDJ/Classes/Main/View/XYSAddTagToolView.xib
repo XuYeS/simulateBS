@@ -12,7 +12,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U9i-kJ-ikW" userLabel="顶部">
-                    <rect key="frame" x="0.0" y="0.0" width="372" height="71"/>
+                    <rect key="frame" x="5" y="0.0" width="362" height="61"/>
                     <animations/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </view>
@@ -64,13 +64,13 @@
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="U9i-kJ-ikW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="4cB-sg-5GG"/>
+                <constraint firstAttribute="top" secondItem="U9i-kJ-ikW" secondAttribute="top" id="4cB-sg-5GG"/>
                 <constraint firstItem="kCv-2F-Q3q" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="98v-Mz-im0"/>
-                <constraint firstItem="U9i-kJ-ikW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HPo-fO-w28"/>
-                <constraint firstAttribute="trailing" secondItem="U9i-kJ-ikW" secondAttribute="trailing" id="KdB-tI-8vF"/>
+                <constraint firstItem="U9i-kJ-ikW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="HPo-fO-w28"/>
+                <constraint firstAttribute="trailing" secondItem="U9i-kJ-ikW" secondAttribute="trailing" constant="5" id="KdB-tI-8vF"/>
                 <constraint firstAttribute="bottom" secondItem="kCv-2F-Q3q" secondAttribute="bottom" id="SkO-Kh-It1"/>
                 <constraint firstAttribute="trailing" secondItem="kCv-2F-Q3q" secondAttribute="trailing" id="ZCP-kV-i7B"/>
-                <constraint firstItem="kCv-2F-Q3q" firstAttribute="top" secondItem="U9i-kJ-ikW" secondAttribute="bottom" id="pHC-mT-qr4"/>
+                <constraint firstItem="kCv-2F-Q3q" firstAttribute="top" secondItem="U9i-kJ-ikW" secondAttribute="bottom" constant="10" id="pHC-mT-qr4"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
