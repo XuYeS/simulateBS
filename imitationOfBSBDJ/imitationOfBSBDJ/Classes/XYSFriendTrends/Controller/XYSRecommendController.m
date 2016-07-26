@@ -221,10 +221,12 @@ static NSString *rightCellId = @"rightRecommendUserCell";
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [self endRefreshAll];
-    XYSLeftRecommendModel *leftRecommendModel = self.listOfLeftRecommendModel[indexPath.row];
-    [self.rightUserTableView reloadData];
-    if (!leftRecommendModel.listOfRecommendUser.count) {
-        [self.rightUserTableView.mj_header beginRefreshing];
+    if (tableView == self.leftTableView) {
+        XYSLeftRecommendModel *leftRecommendModel = self.listOfLeftRecommendModel[indexPath.row];
+        [self.rightUserTableView reloadData];
+        if (!leftRecommendModel.listOfRecommendUser.count) {
+            [self.rightUserTableView.mj_header beginRefreshing];
+        }
     }
 }
 /**

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XYSVoicePlayerViewController">
+            <connections>
+                <outlet property="contentScrollView" destination="8b7-YT-2is" id="Xha-ad-E7n"/>
+                <outlet property="progressView" destination="Cn9-qz-tfD" id="QBu-zr-rh9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8b7-YT-2is">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cn9-qz-tfD" customClass="XYSCircularProgressView">
+                    <rect key="frame" x="250" y="250" width="100" height="100"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="Gu2-mJ-Cvj"/>
+                        <constraint firstAttribute="width" constant="100" id="tn4-76-Ghy"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OTW-3E-4Fx" userLabel="返回">
+                    <rect key="frame" x="20" y="20" width="35" height="35"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="LDo-ZV-gxj"/>
+                        <constraint firstAttribute="height" constant="35" id="ej5-jr-NRc"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="show_image_back_icon"/>
+                    <connections>
+                        <action selector="back" destination="-1" eventType="touchUpInside" id="PHt-8l-6AW"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="8b7-YT-2is" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="BQx-bt-D07"/>
+                <constraint firstAttribute="bottom" secondItem="8b7-YT-2is" secondAttribute="bottom" id="IVd-Ss-g1e"/>
+                <constraint firstItem="OTW-3E-4Fx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="MJj-Xd-tiT"/>
+                <constraint firstItem="Cn9-qz-tfD" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="OCq-eB-dkO"/>
+                <constraint firstItem="Cn9-qz-tfD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="YzA-Ht-qoR"/>
+                <constraint firstItem="8b7-YT-2is" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bVI-ZU-XHN"/>
+                <constraint firstAttribute="trailing" secondItem="8b7-YT-2is" secondAttribute="trailing" id="owq-Zb-XcK"/>
+                <constraint firstItem="OTW-3E-4Fx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="pKI-XD-6zz"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="show_image_back_icon" width="35" height="35"/>
+    </resources>
+</document>

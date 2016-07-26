@@ -65,7 +65,7 @@
    
     XYSAddTagController *atc = [[XYSAddTagController alloc]init];
     //block回传参数
-    __weak typeof(self) weakSelf = self;
+    __weak __typeof(self) weakSelf = self;
     [atc setSendTagBlock:^(NSArray *tagTextArray) {
         
         [weakSelf createTagLabels:tagTextArray];

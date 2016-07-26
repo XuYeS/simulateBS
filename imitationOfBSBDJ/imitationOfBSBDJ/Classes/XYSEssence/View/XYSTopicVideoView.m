@@ -9,7 +9,7 @@
 #import "XYSTopicVideoView.h"
 #import "XYSTopicModel.h"
 #import "XYSShowPictureController.h"
-#import "XYSPlayVoiceController.h"
+#import "XYSVideoPlayViewController.h"
 #import <UIImageView+WebCache.h>
 @interface XYSTopicVideoView()
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
@@ -44,8 +44,12 @@
 }
 -(void)showVideoDetail
 {
-    XYSShowPictureController *spc = [[XYSShowPictureController alloc]init];
-    spc.topicModel = self.topicModel;
-    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:spc animated:YES completion:nil];
+//    XYSShowPictureController *spc = [[XYSShowPictureController alloc]init];
+//    spc.topicModel = self.topicModel;
+//    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:spc animated:YES completion:nil];
+    XYSVideoPlayViewController *vpc = [[XYSVideoPlayViewController alloc]init];
+    vpc.topicModel = self.topicModel;
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:vpc animated:YES completion:nil];
+
 }
 @end

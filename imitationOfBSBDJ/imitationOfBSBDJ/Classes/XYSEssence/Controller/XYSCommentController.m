@@ -132,12 +132,13 @@ static NSString *commentCellId = @"commentCell";
     
     [self.manger GET:@"http://api.budejie.com/api/api_open.php" parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         //防止服务器没有评论数据返回一个空数组而崩溃
-        self.total = [responseObject[@"total"] integerValue];
         if ([responseObject isKindOfClass:[NSArray class]]) {
             [self.tableView reloadData];
             [self.tableView.mj_header endRefreshing];
             return ;
         }else{
+            self.total = [responseObject[@"total"] integerValue];
+
             self.listOfHotComment = [XYSTopCommentModel mj_objectArrayWithKeyValuesArray:responseObject[@"hot"]];
             
             self.listOfComment = [XYSTopCommentModel mj_objectArrayWithKeyValuesArray:responseObject[@"data"]];

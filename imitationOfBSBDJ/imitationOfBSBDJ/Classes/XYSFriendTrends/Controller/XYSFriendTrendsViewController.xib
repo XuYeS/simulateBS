@@ -16,7 +16,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNI-1L-adF">
-                    <rect key="frame" x="40" y="350" width="120" height="30"/>
+                    <rect key="frame" x="40" y="470" width="120" height="30"/>
                     <animations/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="4T8-X3-yLz"/>
@@ -41,7 +41,7 @@
                     </constraints>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dh5-Qr-lLY" userLabel="注册">
-                    <rect key="frame" x="440" y="350" width="120" height="30"/>
+                    <rect key="frame" x="440" y="470" width="120" height="30"/>
                     <animations/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="DFM-if-bed"/>
@@ -62,8 +62,8 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="tYc-2S-6Aj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="224" id="4gs-9G-Dtp"/>
-                <constraint firstAttribute="bottom" secondItem="dh5-Qr-lLY" secondAttribute="bottom" constant="220" id="5yy-aH-I6e"/>
-                <constraint firstAttribute="bottom" secondItem="RNI-1L-adF" secondAttribute="bottom" constant="220" id="PCf-zn-PXX"/>
+                <constraint firstAttribute="bottom" secondItem="dh5-Qr-lLY" secondAttribute="bottom" constant="100" id="5yy-aH-I6e"/>
+                <constraint firstAttribute="bottom" secondItem="RNI-1L-adF" secondAttribute="bottom" constant="100" id="PCf-zn-PXX"/>
                 <constraint firstItem="tYc-2S-6Aj" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Rru-UE-HJf"/>
                 <constraint firstItem="RNI-1L-adF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="a1E-j4-vGx"/>
                 <constraint firstAttribute="trailing" secondItem="dh5-Qr-lLY" secondAttribute="trailing" constant="40" id="u22-F1-Uuu"/>

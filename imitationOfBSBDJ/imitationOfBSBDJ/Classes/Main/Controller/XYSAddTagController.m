@@ -97,7 +97,7 @@
 }
 -(void)setupTextField
 {
-    __weak typeof(self) weakSelf = self;
+    __weak __typeof(self) weakSelf = self;
     
     XYSTagTextField *textField = [[XYSTagTextField alloc]init];
     textField.delegate = self;

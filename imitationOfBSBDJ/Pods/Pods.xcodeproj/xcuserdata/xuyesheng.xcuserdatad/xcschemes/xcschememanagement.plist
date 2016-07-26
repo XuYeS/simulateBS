@@ -14,7 +14,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>DOUAudioStreamer.xcscheme</key>
+		<key>KRVideoPlayer-KRVideoPlayer.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>KRVideoPlayer.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -52,7 +57,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>491216281FA57B4A426FE62D2A57D4BE</key>
+		<key>20048AAE1F4B04CB73C2AFF7DAB46033</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5F61FD08CA540E2B421583EB8D326144</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,12 +72,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>896167420ACA75FC23F80A0A1910443D</key>
+		<key>7DF7BD9F7CD81922DC3BEE5FFB1FE163</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8DA173C2A1703FD74FE9EF47094C067E</key>
+		<key>8BEF0DFF860C02FDB264264226C116DD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -87,12 +97,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BFA587E424D6C1AC2E3428997AA87F46</key>
+		<key>B1439805F195923530F0836FB5F83671</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D26A6D000EA63A2C3BBCF016605D3D4E</key>
+		<key>E2CEF6B05C071AE03B6649FF4CC4FD90</key>
 		<dict>
 			<key>primary</key>
 			<true/>

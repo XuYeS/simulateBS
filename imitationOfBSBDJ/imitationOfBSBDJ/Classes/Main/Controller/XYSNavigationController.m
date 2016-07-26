@@ -36,6 +36,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //因为设置了leftBarButtonItem，所以左滑pop消除了，现在把这个手势的代理设置为nil就可以在重新设置leftBarButtonItem的时候，自动把左滑添加进来
+    self.interactivePopGestureRecognizer.delegate = nil;
 }
 
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
