@@ -23,6 +23,7 @@
     self.navigationItem.title = @"我的关注";
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"friendsRecommentIcon" selectedImage:@"friendsRecommentIcon-click" target:self action:@selector(addFriends)];
 }
+
 -(void)addFriends
 {
     XYSRecommendController *recommendController = [[XYSRecommendController alloc]init];

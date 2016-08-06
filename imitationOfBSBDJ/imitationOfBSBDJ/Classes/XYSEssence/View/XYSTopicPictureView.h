@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "XYSTopicModel.h"
+@class XYSTopicModel;
 @interface XYSTopicPictureView : UIView
 /**模型 */
 @property (nonatomic,strong)XYSTopicModel *topicModel ;

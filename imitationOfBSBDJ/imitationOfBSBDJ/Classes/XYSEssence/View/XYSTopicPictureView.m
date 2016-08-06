@@ -7,6 +7,7 @@
 //
 
 #import "XYSTopicPictureView.h"
+#import "XYSTopicModel.h"
 #import <UIImageView+WebCache.h>
 #import "XYSCircularProgressView.h"
 #import "XYSShowPictureController.h"

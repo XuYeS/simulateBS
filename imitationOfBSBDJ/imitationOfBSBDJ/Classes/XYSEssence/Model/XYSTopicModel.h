@@ -45,6 +45,8 @@
 @property (nonatomic,assign)CGFloat width;
 
 //--------声音
+/**声音帖子的frame */
+@property (nonatomic,assign,readonly)CGRect voiceViewFrame ;
 /**声音时间 */
 @property (nonatomic,assign)NSInteger voicetime ;
 /**播放次数 */
@@ -53,10 +55,13 @@
 @property (nonatomic,copy)NSString  *voiceuri;
 
 //--------视频
+/**视频帖子的frame */
+@property (nonatomic,assign,readonly)CGRect videoViewFrame ;
 /**视频时间 */
 @property (nonatomic,assign)NSInteger videotime ;
 /**视频地址 */
 @property (nonatomic,copy)NSString  *videouri;
+
 //--------辅助属性
 /**内容的高度 */
 @property (nonatomic,assign,readonly)CGFloat topicCellHeight ;
@@ -68,8 +73,6 @@
 @property (nonatomic,assign)CGFloat progressPerc ;
 
 
-/**声音帖子的frame */
-@property (nonatomic,assign,readonly)CGRect voiceViewFrame ;
-/**视频帖子的frame */
-@property (nonatomic,assign,readonly)CGRect videoViewFrame ;
+
+
 @end

@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "XYSTopicModel.h"
-
+@class XYSTopicModel;
 @interface XYSTopicCell : UITableViewCell
 
 /**topic模型 */

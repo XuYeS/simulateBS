@@ -20,7 +20,6 @@
 
 
 - (void)viewDidLoad {
-    
     [super viewDidLoad];
     [XYSRollBackWindow hide];
     [self.longinView layoutIfNeeded];
@@ -34,8 +33,6 @@
     }
     
 }
-
-
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
     [self.view endEditing:YES];

@@ -45,6 +45,7 @@
 
 static NSString *commentCellId = @"commentCell";
 - (void)viewDidLoad {
+    XYSLogFuc;
     [super viewDidLoad];
     self.title = @"评论";
     self.tableView.backgroundColor = XYSBackGroundColor;
@@ -121,7 +122,7 @@ static NSString *commentCellId = @"commentCell";
  */
 -(void)loadNewComment
 {
-    //取消其他所有网络任务
+    //取消其他所有网络任务,防止同时上拉和下拉（也可以在block中判断回来的参数是否跟我要的一样）
     [self.manger.tasks makeObjectsPerformSelector:@selector(cancel)];
     //参数
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
@@ -203,7 +204,7 @@ static NSString *commentCellId = @"commentCell";
 -(void)dealloc
 {
     [[NSNotificationCenter defaultCenter]removeObserver:self];
-    
+    //防止在刷新的时退出控制器，造成坏内存访问
     [self.manger invalidateSessionCancelingTasks:YES];
 }
 
@@ -269,5 +270,22 @@ static NSString *commentCellId = @"commentCell";
 {
     [self.view endEditing:YES];
 }
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    XYSLogFuc;
+    [super viewWillDisappear:animated];
+}
+-(void)viewDidDisappear:(BOOL)animated
+{
+    XYSLogFuc;
+    [super viewDidDisappear:animated];
+}
+-(void)viewWillAppear:(BOOL)animated
+{
+    XYSLogFuc;
+    [super viewWillAppear:animated];
+}
+
 
 @end

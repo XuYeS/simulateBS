@@ -161,7 +161,7 @@
             tagbtn.xys_y = 0;
         }else{//后面的几个
             XYSTagButton *lastBtn = self.listOfTagBtns[i-1];
-            if ((lastBtn.xys_x + lastBtn.xys_width + XYSTagMargin + tagbtn.xys_width)>=self.contentView.xys_width) {//换行
+            if ((CGRectGetMaxX(lastBtn.frame) + XYSTagMargin + tagbtn.xys_width)>=self.contentView.xys_width) {//换行
                 tagbtn.xys_x = 0;
                 tagbtn.xys_y = CGRectGetMaxY(lastBtn.frame)+ XYSTagMargin;
             }else{//不换行
@@ -172,7 +172,7 @@
     }
     //修改textField和addButton
     XYSTagButton *lastBtn = [self.listOfTagBtns lastObject];
-    if ((lastBtn.xys_x + lastBtn.xys_width + XYSTagMargin +100)>=self.contentView.xys_width) {//换行
+    if ((CGRectGetMaxX(lastBtn.frame) + XYSTagMargin +100)>=self.contentView.xys_width) {//换行
         self.textField.xys_x = 0;
         self.textField.xys_y = CGRectGetMaxY(lastBtn.frame)+ XYSTagMargin;
     }else{//不换行

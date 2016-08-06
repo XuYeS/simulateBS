@@ -7,6 +7,7 @@
 //
 
 #import "XYSTopicCell.h"
+#import "XYSTopicModel.h"
 #import "XYSTopicPictureView.h"
 #import "XYSTopicVoiceView.h"
 #import "XYSTopicVideoView.h"
