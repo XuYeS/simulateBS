@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
@@ -21,11 +21,9 @@
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_register_background" translatesAutoresizingMaskIntoConstraints="NO" id="wWE-nH-jln" userLabel="背景">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                    <animations/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUX-G5-OVW">
                     <rect key="frame" x="15" y="40" width="16" height="16"/>
-                    <animations/>
                     <constraints>
                         <constraint firstAttribute="width" constant="16" id="YIP-hs-bnr"/>
                         <constraint firstAttribute="height" constant="16" id="f8Y-ci-OGE"/>
@@ -40,14 +38,12 @@
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="快速登录" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vmu-WV-VED">
                             <rect key="frame" x="272" y="0.0" width="56" height="17"/>
-                            <animations/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_register_left_line" translatesAutoresizingMaskIntoConstraints="NO" id="DFF-UR-vlk" userLabel="左边线">
                             <rect key="frame" x="164" y="8" width="103" height="1"/>
-                            <animations/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="103" id="Clb-43-xTm"/>
                                 <constraint firstAttribute="height" constant="1" id="bh7-VD-Oyc"/>
@@ -55,7 +51,6 @@
                         </imageView>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_register_right_line" translatesAutoresizingMaskIntoConstraints="NO" id="ucY-OD-DRW" userLabel="右边线">
                             <rect key="frame" x="329" y="8" width="103" height="1"/>
-                            <animations/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="Z5Q-Q1-uCB"/>
                                 <constraint firstAttribute="width" constant="103" id="sZk-Y7-Lqn"/>
@@ -63,7 +58,6 @@
                         </imageView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9vl-BJ-PWd" customClass="XYSVerticalButton">
                             <rect key="frame" x="15" y="27" width="70" height="95"/>
-                            <animations/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="70" id="8Vp-Ce-5jt"/>
                                 <constraint firstAttribute="height" constant="95" id="Tke-tJ-w1Z"/>
@@ -76,7 +70,6 @@
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sh8-OG-Kjd" customClass="XYSVerticalButton">
                             <rect key="frame" x="515" y="27" width="70" height="95"/>
-                            <animations/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="95" id="LJx-aG-YaX"/>
                                 <constraint firstAttribute="width" constant="70" id="ULM-iC-NOi"/>
@@ -89,7 +82,6 @@
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZ1-4X-9ig" customClass="XYSVerticalButton">
                             <rect key="frame" x="265" y="27" width="70" height="95"/>
-                            <animations/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="70" id="XkW-dT-DwV"/>
                                 <constraint firstAttribute="height" constant="95" id="e8s-1W-usm"/>
@@ -101,7 +93,6 @@
                             <state key="highlighted" image="login_sina_icon_click"/>
                         </button>
                     </subviews>
-                    <animations/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="180" id="0F6-pc-8am"/>
@@ -127,24 +118,20 @@
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_rgister_textfield_bg" translatesAutoresizingMaskIntoConstraints="NO" id="aey-f6-qVF" userLabel="背景">
                                     <rect key="frame" x="0.0" y="0.0" width="266" height="92"/>
-                                    <animations/>
                                 </imageView>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="No4-N5-XQP" customClass="XYSTextField">
                                     <rect key="frame" x="10" y="46" width="246" height="46"/>
-                                    <animations/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 </textField>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="手机号" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Jzx-RU-C7m" customClass="XYSTextField">
                                     <rect key="frame" x="10" y="0.0" width="246" height="46"/>
-                                    <animations/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                             </subviews>
-                            <animations/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstItem="No4-N5-XQP" firstAttribute="leading" secondItem="Jzx-RU-C7m" secondAttribute="leading" id="4ED-jg-yHD"/>
@@ -168,7 +155,6 @@ CQ
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5mF-38-4Kp">
                             <rect key="frame" x="167" y="107" width="266" height="35"/>
-                            <animations/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="35" id="1cl-nf-5d1"/>
                             </constraints>
@@ -186,14 +172,12 @@ CQ
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZr-iR-JDb">
                             <rect key="frame" x="365" y="157" width="68" height="30"/>
-                            <animations/>
                             <state key="normal" title="忘记密码?">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                         </button>
                     </subviews>
-                    <animations/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="g7b-EE-nya" firstAttribute="trailing" secondItem="5mF-38-4Kp" secondAttribute="trailing" id="2lg-kX-0Gk"/>
@@ -214,24 +198,20 @@ CQ
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_rgister_textfield_bg" translatesAutoresizingMaskIntoConstraints="NO" id="kt2-H3-hoi" userLabel="背景">
                                     <rect key="frame" x="0.0" y="0.0" width="266" height="92"/>
-                                    <animations/>
                                 </imageView>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="5xD-Wn-SHM" customClass="XYSTextField">
                                     <rect key="frame" x="10" y="0.0" width="246" height="46"/>
-                                    <animations/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="设置密码" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="1Kr-0d-cYT" customClass="XYSTextField">
                                     <rect key="frame" x="10" y="46" width="246" height="46"/>
-                                    <animations/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 </textField>
                             </subviews>
-                            <animations/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="92" id="42T-dx-pZb"/>
@@ -252,7 +232,6 @@ CQ
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bc2-HQ-4Vc">
                             <rect key="frame" x="167" y="107" width="266" height="35"/>
-                            <animations/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="35" id="ERL-YL-ZqA"/>
                             </constraints>
@@ -269,7 +248,6 @@ CQ
                             </userDefinedRuntimeAttributes>
                         </button>
                     </subviews>
-                    <animations/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="97A-EM-0bU" firstAttribute="top" secondItem="FAR-Z5-L5B" secondAttribute="top" id="95k-Ah-CTg"/>
@@ -282,7 +260,6 @@ CQ
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UhG-kk-GAM">
                     <rect key="frame" x="485" y="40" width="100" height="30"/>
-                    <animations/>
                     <constraints>
                         <constraint firstAttribute="width" constant="100" id="ne8-Yu-pl4"/>
                     </constraints>
@@ -300,7 +277,6 @@ CQ
                     </connections>
                 </button>
             </subviews>
-            <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="UhG-kk-GAM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="2kZ-Bo-AXV"/>

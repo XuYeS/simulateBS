@@ -123,6 +123,7 @@ static UIWindow * publishWindow_;
 {
     if ([btn.titleLabel.text isEqualToString:@"发段子"]) {
        [self cancelWithCompletionBlock:^{
+           publishWindow_.hidden = YES;//修改了需要按一下才能弹出发段子界面的bug
            XYSNavigationController *nc = [[XYSNavigationController alloc]initWithRootViewController:[[XYSPostViewController alloc] init]];
            [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:nc animated:YES completion:nil];
        }];
